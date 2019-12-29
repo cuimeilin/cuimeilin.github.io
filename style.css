@@ -1,4 +1,4 @@
-/* transitions */
+/* transition */
 #fader {
 	position: fixed;
 	top: 0;
@@ -245,8 +245,9 @@ img.art {
 }
 
 .img-details h2 {
-	font-size: 15pt;
+	font-size: 16pt;
 	color: white;
+	text-align: left;
 }
 
 .img-details p {
