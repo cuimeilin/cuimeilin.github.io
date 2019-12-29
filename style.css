@@ -95,14 +95,21 @@ h1 {
 
 h2 {
 	font-family: Montserrat, sans-serif;
-	font-size: 15pt;
-	color: #373737;
-
+	font-size: 16pt;
+	text-align: center;
+	color: #DF4343;
 }
 
 h3 {
 	font-family: Montserrat, sans-serif;
-	font-size: 15pt;
+	font-size: 13pt;
+	color: #373737;
+
+}
+
+h4 {
+	font-family: Montserrat, sans-serif;
+	font-size: 13pt;
 	color: #373737;
 	text-align: center;
 }
@@ -110,7 +117,7 @@ h3 {
 p {
 	font-size: 13pt;
 	line-height: 1.5em;
-	color: #747474;
+	color: #646464;
 }
 
 p.proj-back {
@@ -143,8 +150,17 @@ footer {
 	border-top: 1px solid #DFDFDF;
 }
 
-ul {
+footer p {
+	font-size: 11.5pt;
 	color: #747474;
+}
+
+.keyword {
+	color: #DF4343;
+}
+
+ul {
+	color: #646464;
 }
 
 ul.nav-list {
@@ -160,6 +176,7 @@ ul.br3w-list {
 
 li {
 	font-size: 13pt;
+	padding: 0.3em;
 }
 
 li.nav-elem {
@@ -168,6 +185,14 @@ li.nav-elem {
 	color: black;
 	margin: 1em;
 	font-size: 13pt;
+}
+
+li.foot-elem {
+	display: inline;
+	text-decoration: none;
+	color: #747474;
+	margin: 1em;
+	font-size: 12pt;
 }
 
 a.head:link, a.head:visited {
@@ -189,7 +214,7 @@ a:hover {
 }
 
 hr {
-	border: 1px solid #DF4343;
+	border: 1px solid #EFB6B6;
 }
 
 img {
