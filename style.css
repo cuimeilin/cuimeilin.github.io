@@ -88,27 +88,27 @@ body {
 
 h1 {
 	font-family: Montserrat, sans-serif;
-	font-size: 20pt;
+	font-size: 18pt;
 	text-align: center;
 	color: #DF4343;
 }
 
 h2 {
 	font-family: Montserrat, sans-serif;
-	font-size: 18pt;
+	font-size: 17pt;
 	color: #373737;
 
 }
 
 h3 {
 	font-family: Montserrat, sans-serif;
-	font-size: 18pt;
+	font-size: 17pt;
 	color: #373737;
 	text-align: center;
 }
 
 p {
-	font-size: 16pt;
+	font-size: 15pt;
 	line-height: 1.5em;
 	color: #747474;
 }
@@ -155,11 +155,11 @@ ul.nav-list {
 
 ul.br3w-list {
 	list-style-type: decimal;
-	font-size: 16pt;
+	font-size: 15pt;
 }
 
 li {
-	font-size: 16pt;
+	font-size: 15pt;
 }
 
 li.nav-elem {
@@ -167,7 +167,7 @@ li.nav-elem {
 	text-decoration: none;
 	color: black;
 	margin: 1em;
-	font-size: 16pt;
+	font-size: 15pt;
 }
 
 a.head:link, a.head:visited {
@@ -206,7 +206,7 @@ img.art {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 400px;
+	height: 300px;
 	display: block;
 	margin-bottom: 1.5em;
 	position: relative;
@@ -220,12 +220,12 @@ img.art {
 }
 
 .img-details h2 {
-	font-size: 18pt;
+	font-size: 17pt;
 	color: white;
 }
 
 .img-details p {
-	font-size: 16pt;
+	font-size: 15pt;
 	line-height: 0;
 	color: white;
 }
@@ -321,7 +321,7 @@ img.art {
 	.img-details p { font-size: 15pt; }
 	*/
 	
-	.img-bg { height: 450px; }
+	.img-bg { height: 400px; }
 
 	.art-row {
 		clear: both;
