@@ -96,8 +96,11 @@ h1 {
 h2 {
 	font-family: Montserrat, sans-serif;
 	font-size: 16pt;
-	text-align: center;
 	color: #DF4343;
+}
+
+h2.proj-title {
+	text-align: center;
 }
 
 h3 {
@@ -247,7 +250,6 @@ img.art {
 .img-details h2 {
 	font-size: 16pt;
 	color: white;
-	text-align: left;
 }
 
 .img-details p {
@@ -300,7 +302,7 @@ img.art {
 	}
 
 	.art-col{
-		flex: 45%;
+		flex: 44%;
 		max-width: 45%;
 		margin: 1em;
 	}
