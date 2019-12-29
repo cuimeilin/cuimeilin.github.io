@@ -95,20 +95,20 @@ h1 {
 
 h2 {
 	font-family: Montserrat, sans-serif;
-	font-size: 17pt;
+	font-size: 15pt;
 	color: #373737;
 
 }
 
 h3 {
 	font-family: Montserrat, sans-serif;
-	font-size: 17pt;
+	font-size: 15pt;
 	color: #373737;
 	text-align: center;
 }
 
 p {
-	font-size: 15pt;
+	font-size: 13pt;
 	line-height: 1.5em;
 	color: #747474;
 }
@@ -155,11 +155,11 @@ ul.nav-list {
 
 ul.br3w-list {
 	list-style-type: decimal;
-	font-size: 15pt;
+	font-size: 13pt;
 }
 
 li {
-	font-size: 15pt;
+	font-size: 13pt;
 }
 
 li.nav-elem {
@@ -167,7 +167,7 @@ li.nav-elem {
 	text-decoration: none;
 	color: black;
 	margin: 1em;
-	font-size: 15pt;
+	font-size: 13pt;
 }
 
 a.head:link, a.head:visited {
@@ -206,7 +206,7 @@ img.art {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 300px;
+	height: 400px;
 	display: block;
 	margin-bottom: 1.5em;
 	position: relative;
@@ -220,12 +220,12 @@ img.art {
 }
 
 .img-details h2 {
-	font-size: 17pt;
+	font-size: 15pt;
 	color: white;
 }
 
 .img-details p {
-	font-size: 15pt;
+	font-size: 13pt;
 	line-height: 0;
 	color: white;
 }
@@ -262,66 +262,8 @@ img.art {
 	width: 100%;
 }
 
-/*
-@media only screen and (min-width: 700px) {
-	h1 { font-size: 25pt; }
-
-	h2 { font-size: 20pt; }
-
-	h3 { font-size: 20pt; }	
-
-	p { font-size: 18pt; }	
-
-	ul.br3w-list { font-size: 18pt; }
-
-	li { font-size: 18pt; }
-
-	li.nav-elem { font-size: 18pt; }
-
-	.img-details h2 { font-size: 20pt; }
-
-	.img-details p { font-size: 18pt; }
-
-	.img-bg { height: 550px; }
-
-	.art-row {
-		clear: both;
-		max-width: 1040px;
-		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.art-col{
-		flex: 45%;
-		max-width: 45%;
-		margin: 1em;
-	}
-}
-*/
-
-@media only screen and (min-width: 800px) {
-	/*
-	h1 { font-size: 19pt; }
-
-	h2 { font-size: 17pt; }
-
-	h3 { font-size: 17pt; }	
-
-	p { font-size: 15pt; }	
-
-	ul.br3w-list { font-size: 15pt; }
-
-	li { font-size: 15pt; }
-
-	li.nav-elem { font-size: 15pt; }
-
-	.img-details h2 { font-size: 17pt; }
-
-	.img-details p { font-size: 15pt; }
-	*/
-	
-	.img-bg { height: 400px; }
+@media only screen and (min-width: 760px) {	
+	.img-bg { height: 450px; }
 
 	.art-row {
 		clear: both;
@@ -364,24 +306,6 @@ img.art {
 
 
 @media only screen and (min-width: 1140px) {
-	h1 { font-size: 16pt; }
-
-	h2 { font-size: 15pt; }
-
-	h3 { font-size: 15pt; }	
-
-	p { font-size: 13pt; }	
-
-	ul.br3w-list { font-size: 13pt; }
-
-	li { font-size: 13pt; }
-
-	li.nav-elem { font-size: 13pt; }
-
-	.img-details h2 { font-size: 15pt; }
-
-	.img-details p { font-size: 13pt; }
-
 	.img-bg { height: 500px; }
 
 	.art-row {
