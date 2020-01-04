@@ -224,6 +224,8 @@ hr {
 img {
 	width: 100%;
 	height: auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 img.art {
@@ -268,8 +270,6 @@ img.art {
 	clear: both;
 	max-width: 1040px;
 	margin: 0 auto;
-	padding-top: 1em;
-	padding-bottom: 1em;
 }
 
 .row-proj {
@@ -282,9 +282,6 @@ img.art {
 	padding: 2em;
 }
 
-.col {
-	padding: 1em;
-}
 .art-col {
 	flex: 100%;
 	max-width: 100%;
