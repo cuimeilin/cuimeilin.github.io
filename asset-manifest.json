@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cuimeilin.github.io/static/css/main.f8f5e298.chunk.css",
+    "main.js": "/cuimeilin.github.io/static/js/main.83834c4f.chunk.js",
+    "main.js.map": "/cuimeilin.github.io/static/js/main.83834c4f.chunk.js.map",
+    "runtime-main.js": "/cuimeilin.github.io/static/js/runtime-main.15225b6a.js",
+    "runtime-main.js.map": "/cuimeilin.github.io/static/js/runtime-main.15225b6a.js.map",
+    "static/js/2.bf64465c.chunk.js": "/cuimeilin.github.io/static/js/2.bf64465c.chunk.js",
+    "static/js/2.bf64465c.chunk.js.map": "/cuimeilin.github.io/static/js/2.bf64465c.chunk.js.map",
+    "index.html": "/cuimeilin.github.io/index.html",
+    "precache-manifest.19f623c0303f5dfbb281446b5496f063.js": "/cuimeilin.github.io/precache-manifest.19f623c0303f5dfbb281446b5496f063.js",
+    "service-worker.js": "/cuimeilin.github.io/service-worker.js",
+    "static/css/main.f8f5e298.chunk.css.map": "/cuimeilin.github.io/static/css/main.f8f5e298.chunk.css.map",
+    "static/js/2.bf64465c.chunk.js.LICENSE.txt": "/cuimeilin.github.io/static/js/2.bf64465c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15225b6a.js",
+    "static/js/2.bf64465c.chunk.js",
+    "static/css/main.f8f5e298.chunk.css",
+    "static/js/main.83834c4f.chunk.js"
+  ]
+}
