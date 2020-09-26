@@ -123,6 +123,7 @@ export default class LandingPage extends React.Component {
           <Maintext>meilin cui</Maintext>
           <Subtext>computational mathematics at ucla.</Subtext>
           <Subtext>interested in web development and design.</Subtext>
+          <Subtext>this website is under construction.</Subtext>
           <PageLinks>
             <StyledLink to="/projects">projects →</StyledLink>
             <StyledLink to="/about">about →</StyledLink>

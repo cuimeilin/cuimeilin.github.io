@@ -86,8 +86,8 @@ export default class BR3W extends React.Component {
         <AboutDesc>
           <Header>BR3W</Header>
           <Description>
-            <Info>a smart coffee machine</Info>
-            <Role>machine designer and builder</Role>
+            <Info>A coffee machine to customize the brewing and drinking experience.</Info>
+            <Role>machine designer and builder </Role>
             <Text>under construction</Text>
           </Description>
         </AboutDesc>
