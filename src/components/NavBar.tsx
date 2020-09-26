@@ -62,7 +62,20 @@ export default class NavBar extends React.Component {
           <Links>
             <StyledLink to="/projects">projects</StyledLink>
             <StyledLink to="/about">about</StyledLink>
-            <StyledLink to="/">resume</StyledLink>
+            <a
+              style={{
+                textDecoration: "none",
+                boxSizing: "border-box",
+                margin: "0.5em 1em",
+                color: "#A7D2A8",
+              }}
+              target="_blank"
+              href={
+                "https://drive.google.com/file/d/1iXLkxffNwf5DAAamJjFIce1toQ7qDGIr/view?usp=sharing"
+              }
+            >
+              resume
+            </a>
           </Links>
         </StyledNav>
       </>

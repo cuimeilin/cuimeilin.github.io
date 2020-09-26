@@ -39,10 +39,10 @@ function App() {
             <CleanConsulting />
           </Route>
           <Route exact path="/stationery">
-            <Stationery />
+            <ProjectPage />
           </Route>
           <Route exact path="/art">
-            <Art />
+            <ProjectPage />
           </Route>
         </Switch>
       </Router>

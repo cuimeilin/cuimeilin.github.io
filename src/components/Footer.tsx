@@ -44,22 +44,36 @@ const Links = styled("div")`
   }
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  box-sizing: border-box;
-  margin: 0em 0.5em;
-
-  color: ${lightgreen};
-`;
-
 export default class NavBar extends React.Component {
   render() {
     return (
       <FooterContent>
         <Tagline>meilin cui. 2020</Tagline>
         <Links>
-          <StyledLink to="/">github</StyledLink>
-          <StyledLink to="/about">linkedin</StyledLink>
+          <a
+            style={{
+              textDecoration: "none",
+              boxSizing: "border-box",
+              margin: "0 0.5em",
+              color: "#A7D2A8",
+            }}
+            target="_blank"
+            href={"https://github.com/cuimeilin"}
+          >
+            github
+          </a>
+          <a
+            style={{
+              textDecoration: "none",
+              boxSizing: "border-box",
+              margin: "0 0.5em",
+              color: "#A7D2A8",
+            }}
+            target="_blank"
+            href={"https://www.linkedin.com/in/meilin-cui/"}
+          >
+            linkedin
+          </a>
         </Links>
       </FooterContent>
     );
