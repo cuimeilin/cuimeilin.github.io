@@ -5,9 +5,15 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { white, grey, lightgreen, green, darkgreen } = colors;
+const { white, lightgrey, grey, lightgreen, green, darkgreen } = colors;
 const { title, text } = fonts;
 const { notMobile } = mediaQueries;
+
+const Project = styled("div")`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 const AboutDesc = styled("div")`
   display: flex;
@@ -17,32 +23,33 @@ const AboutDesc = styled("div")`
 
   flex: 1 0 auto;
   min-height: auto;
-`;
 
-const Description = styled("div")`
-  line-height: 1.5em;
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  margin: 0.5em 0;
-`;
-
-const Project = styled("div")`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  ${notMobile} {
+    width: 55%;
+  }
 `;
 
 const Header = styled("div")`
   font-size: 18px;
   color: ${darkgreen};
   font-family: ${title};
+  box-sizing: border-box;
+  margin: 0 0 0.5em;
 
   ${notMobile} {
     font-size: 28px;
   }
 `;
+
+const Description = styled("div")`
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+`;
+
+const Byline = styled("div")``;
+
 const Info = styled("div")`
   font-size: 17px;
 
@@ -51,19 +58,36 @@ const Info = styled("div")`
 
   ${notMobile} {
     font-size: 25px;
-    padding-top: 0.4em;
   }
 `;
+
 const Role = styled("div")`
   font-size: 15px;
+  line-height: 1.5em;
 
   font-family: ${text};
   color: ${lightgreen};
 
   ${notMobile} {
     font-size: 22px;
-    padding-top: 0.4em;
   }
+`;
+
+const Timeline = styled("div")`
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+
+  font-family: ${text};
+  color: ${lightgrey};
+
+  ${notMobile} {
+    font-size: 20px;
+  }
+`;
+
+const Body = styled("div")`
+  box-sizing: border-box;
 `;
 
 const Section = styled("div")`
@@ -73,7 +97,17 @@ const Section = styled("div")`
 
   ${notMobile} {
     font-size: 23px;
-    padding-top: 1em;
+  }
+`;
+
+const Step = styled("div")`
+  font-size: 15px;
+
+  font-family: ${text};
+  color: ${lightgreen};
+
+  ${notMobile} {
+    font-size: 22px;
   }
 `;
 
@@ -81,16 +115,14 @@ const Text = styled("div")`
   font-size: 14px;
   font-family: ${text};
   color: ${grey};
+  line-height: 1.5em;
+
+  margin-bottom: 0.5em;
 
   ${notMobile} {
     font-size: 20px;
-    padding-top: 0.4em;
   }
 `;
-
-const Byline = styled("div")``;
-
-const Body = styled("div")``;
 
 export default class DailyBruin extends React.Component {
   render() {
@@ -101,45 +133,41 @@ export default class DailyBruin extends React.Component {
           <Header>Daily Bruin</Header>
           <Description>
             <Byline>
-              <Info>
-                The Daily Bruin is UCLA's largest newspaper; the External Sites
-                team creates interactive, story-specific flatpages.
-              </Info>
-              <Role>general developer, features designer and developer</Role>
+              <Info>UCLA's largest newspaper.</Info>
+              <Role>general developer, features designer and developer.</Role>
+              <Timeline>January 2020 - present</Timeline>
               <Text>
-                Features is the website that will show all the previous
-                flatpages created by the External Sites team.
+                The External Sites sector of The Daily Bruin develops
+                interactive, story-specific flatpages using React.js.
               </Text>
               <Text>
-                On the team, I work with React.js to develop components for
-                these flatpages. I am currently using Figma and React.js to
-                create Features.
+                Currently using Figma and React to develop Features, the
+                External Sites-specific website that will host our projects.
               </Text>
             </Byline>
 
             <Body>
               <Section>
                 Features is still in development - in the meantime, feel free to
-                explore other websites that I've worked on!
+                check out other flatpages I've worked on during my time on the
+                External Sites team.
               </Section>
-              <Role>Unfinished Stories</Role>
+              <Step>COVID Student Stories</Step>
               <Text>
-                A project thought up by the External Sites team, Unfinished
-                Stories is a platform to share student stories in light of the
-                coronavirus pandemic.
+                Sharing student stories in light of the coronavirus pandemic.
               </Text>
-              <Role>2020 Winter Enterprise</Role>
+              <Step>2020 Winter Enterprise</Step>
               <Text>
-                An interactive flatpage that breaks down the business that is
-                UCLA Athletics and its financial future.
+                Analyzing the business that iS UCLA Athletics and considering
+                its finanical future after the pandemic.
               </Text>
-              <Role>2020 Democratic Primaries</Role>
+              <Step>2020 Democratic Primaries</Step>
               <Text>
-                An interactive flatpage that breaks down the Democratic
-                candidates and their platforms.
+                Breaking down the Democratic Primary candidates and their
+                platforms.
               </Text>
-              <Role>2020 Oscars</Role>
-              <Text>An interactive flatpage that talks about the Oscars.</Text>
+              <Step>2020 Oscars</Step>
+              <Text>Discussing the nominees for the Oscars.</Text>
             </Body>
           </Description>
         </AboutDesc>

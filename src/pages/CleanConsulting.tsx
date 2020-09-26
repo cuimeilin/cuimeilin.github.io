@@ -5,9 +5,15 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { white, grey, lightgreen, green, darkgreen } = colors;
+const { white, lightgrey, grey, lightgreen, green, darkgreen } = colors;
 const { title, text } = fonts;
 const { notMobile } = mediaQueries;
+
+const Project = styled("div")`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 const AboutDesc = styled("div")`
   display: flex;
@@ -17,32 +23,33 @@ const AboutDesc = styled("div")`
 
   flex: 1 0 auto;
   min-height: auto;
-`;
 
-const Description = styled("div")`
-  line-height: 1.5em;
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  margin: 0.5em 0;
-`;
-
-const Project = styled("div")`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  ${notMobile} {
+    width: 55%;
+  }
 `;
 
 const Header = styled("div")`
   font-size: 18px;
   color: ${darkgreen};
   font-family: ${title};
+  box-sizing: border-box;
+  margin: 0 0 0.5em;
 
   ${notMobile} {
     font-size: 28px;
   }
 `;
+
+const Description = styled("div")`
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+`;
+
+const Byline = styled("div")``;
+
 const Info = styled("div")`
   font-size: 17px;
 
@@ -51,19 +58,36 @@ const Info = styled("div")`
 
   ${notMobile} {
     font-size: 25px;
-    padding-top: 0.4em;
   }
 `;
+
 const Role = styled("div")`
   font-size: 15px;
+  line-height: 1.5em;
 
   font-family: ${text};
   color: ${lightgreen};
 
   ${notMobile} {
     font-size: 22px;
-    padding-top: 0.4em;
   }
+`;
+
+const Timeline = styled("div")`
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+
+  font-family: ${text};
+  color: ${lightgrey};
+
+  ${notMobile} {
+    font-size: 20px;
+  }
+`;
+
+const Body = styled("div")`
+  box-sizing: border-box;
 `;
 
 const Section = styled("div")`
@@ -73,7 +97,17 @@ const Section = styled("div")`
 
   ${notMobile} {
     font-size: 23px;
-    padding-top: 1em;
+  }
+`;
+
+const Step = styled("div")`
+  font-size: 15px;
+
+  font-family: ${text};
+  color: ${lightgreen};
+
+  ${notMobile} {
+    font-size: 22px;
   }
 `;
 
@@ -81,18 +115,16 @@ const Text = styled("div")`
   font-size: 14px;
   font-family: ${text};
   color: ${grey};
+  line-height: 1.5em;
+
+  margin-bottom: 0.5em;
 
   ${notMobile} {
     font-size: 20px;
-    padding-top: 0.4em;
   }
 `;
 
-const Byline = styled("div")``;
-
-const Body = styled("div")``;
-
-export default class CleanConsulting extends React.Component {
+export default class Penelope extends React.Component {
   render() {
     return (
       <Project>
@@ -102,50 +134,49 @@ export default class CleanConsulting extends React.Component {
           <Description>
             <Byline>
               <Info>A sustainable student organization.</Info>
-              <Role>graphic designer and merchandise illustrator</Role>
+              <Role>graphic designer and merchandise illustrator.</Role>
+              <Timeline>May 2019 - May 2020</Timeline>
               <Text>
-                Clean Consulting is an organization at UCLA aiming to empower
-                companies to understand and act on their connections with the
-                natural world.
+                Clean consulting is an organization at UCLA aiming to empower
+                companies and institutions to understand and act on their
+                connections with the natural world.
               </Text>
               <Text>
                 As the lead graphic designer, I created promotional material for
                 our project teams and worked on organization branding. I was
-                given free range to create a design for our team apparel.
+                given free range to create a design for our apparel fundraiser.
               </Text>
             </Byline>
 
             <Body>
-              <Section>hand lettering</Section>
+              <Section>hand-lettering</Section>
               <Text>
-                We wanted to keep the hand-lettered aspect of the previous
-                year's apparel, so I sketched out a few potential options that I
-                thought would be suitable for a shirt.
+                Initially, we wanted to keep the hand-lettered aspect of the
+                previous year’s apparel, so I made a few options that would work
+                on a shirt, keeping in mind loop size and line weight.
               </Text>
 
-              <Section>sketching</Section>
+              <Section>art</Section>
               <Text>
                 Clean Consulting, at its core, is an organization for the
-                promotion of sustainable action to preserve nation. I wanted a
-                relatively clean and simple design that was still "pretty" and
-                ultimately descided on flora and botanical life to serve as
+                promotion of sustainable action to preserve nature. Because of
+                this, I decided on flora and botanical life to serve as
                 decorative elements.
               </Text>
               <Text>
-                I made some sketches from life and from image references to
-                explore variation in plant life and to develop a foundation in
-                plant structure.
+                I drew samples from life and image references to develop a style
+                that would be appropriate.
               </Text>
               <Text>
-                I then combined the hand-lettered name with some of the
-                botanical life that I sketched out as well as found online, and
-                came up with a sketch of what the design would look like.
+                We are a club based at UCLA, so I decided to have the breast
+                design be of poppies, the state flower of California.
               </Text>
 
-              <Section>results</Section>
+              <Section>iteration and final result</Section>
               <Text>
                 I used Affinity Designer and the vector pen tool to draw out the
-                design.
+                design. The sweatshirt was fundraised and printed through
+                Bonfire.
               </Text>
             </Body>
           </Description>

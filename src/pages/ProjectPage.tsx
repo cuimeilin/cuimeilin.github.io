@@ -39,7 +39,7 @@ const Header = styled("div")`
   font-size: 21px;
 
   font-family: ${title};
-  color: ${green};
+  color: ${darkgreen};
 
   ${notMobile} {
     font-size: 32px;

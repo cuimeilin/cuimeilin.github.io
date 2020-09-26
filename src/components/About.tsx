@@ -34,23 +34,26 @@ export default class AboutTxt extends React.Component {
         <AboutDesc>
           <Description>
             <p>
-              I am fourth year at UCLA studying computational mathematics.
-              Currently developing interactive, story-specific websites for the
-              Daily Bruin, our university's largest newspaper.
+              I’m a fourth year at UCLA studying Computational Mathematics.
+              Currently developing interactive, story-specific websites for The
+              Daily Bruin, our university’s largest newspaper.
             </p>
             <p>
-              I was a mechanical engineering major (for three years, in fact)
-              before realizing that it was ultimately not a field that brought
-              me joy or opportunities that I wanted to pursue.
+              A fun fact about me: I was a mechanical engineering major for
+              nearly three years before coming to terms with the fact that it
+              was ultimately not the field for me. I made the switch to
+              computational mathematics in March of 2020 and am on track to
+              graduate in 2021.
             </p>
             <p>
-              I'm looking to further pursue web development and design after I
-              complete my undergraduate degree - currently deciding between
-              applying to graduate school or to jobs in industry.
+              I’m looking to further pursue web development and design after i
+              complete my undergraduate degree - deciding between applying to
+              graduate school or to jobs in industry.
             </p>
             <p>
               If you would like to know more about me, my interests, or my
-              experience with changing my major, feel free to reach out!
+              experience with changing my major, feel free to reach out by email
+              or message me on LinkedIn!
             </p>
           </Description>
         </AboutDesc>

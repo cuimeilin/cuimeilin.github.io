@@ -38,6 +38,20 @@ const Subtext = styled("div")`
   }
 `;
 
+const Warning = styled("div")`
+  font-size: 20px;
+  text-align: center;
+  margin: 0.25em 0;
+  width: 70%;
+
+  font-family: ${text};
+  color: ${grey};
+
+  ${notMobile} {
+    font-size: 32px;
+  }
+`;
+
 const Maintext = styled("div")`
   font-size: 36px;
   font-family: ${title};
@@ -123,7 +137,7 @@ export default class LandingPage extends React.Component {
           <Maintext>meilin cui</Maintext>
           <Subtext>computational mathematics at ucla.</Subtext>
           <Subtext>interested in web development and design.</Subtext>
-          <Subtext>this website is under construction.</Subtext>
+          <Warning>website under construction.</Warning>
           <PageLinks>
             <StyledLink to="/projects">projects →</StyledLink>
             <StyledLink to="/about">about →</StyledLink>

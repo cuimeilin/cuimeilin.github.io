@@ -46,11 +46,13 @@ const Name = styled("div")`
   font-size: 18px;
 
   font-family: ${title};
+  color: ${green};
 
   ${notMobile} {
     font-size: 28px;
   }
 `;
+
 const Info = styled("div")`
   font-size: 17px;
 
@@ -117,12 +119,14 @@ export default class AboutTxt extends React.Component {
                 <Name>custom stationery →</Name>
               </Link>
               <Info>memo pad and calender designs</Info>
+              <Role>in progress</Role>
             </Description>
             <Description>
               <Link to="/art" style={linkStyling}>
-                <Name>art</Name>
+                <Name>art →</Name>
               </Link>
-              <Info>paintings and drawings →</Info>
+              <Info>paintings and drawings</Info>
+              <Role>in progress</Role>
             </Description>
           </Projects>
         </ProjDesc>

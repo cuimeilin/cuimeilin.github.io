@@ -5,9 +5,15 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { white, grey, lightgreen, green, darkgreen } = colors;
+const { white, lightgrey, grey, lightgreen, green, darkgreen } = colors;
 const { title, text } = fonts;
 const { notMobile } = mediaQueries;
+
+const Project = styled("div")`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 const AboutDesc = styled("div")`
   display: flex;
@@ -17,32 +23,33 @@ const AboutDesc = styled("div")`
 
   flex: 1 0 auto;
   min-height: auto;
-`;
 
-const Description = styled("div")`
-  line-height: 1.5em;
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  margin: 0.5em 0;
-`;
-
-const Project = styled("div")`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  ${notMobile} {
+    width: 55%;
+  }
 `;
 
 const Header = styled("div")`
   font-size: 18px;
   color: ${darkgreen};
   font-family: ${title};
+  box-sizing: border-box;
+  margin: 0 0 0.5em;
 
   ${notMobile} {
     font-size: 28px;
   }
 `;
+
+const Description = styled("div")`
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+`;
+
+const Byline = styled("div")``;
+
 const Info = styled("div")`
   font-size: 17px;
 
@@ -51,19 +58,36 @@ const Info = styled("div")`
 
   ${notMobile} {
     font-size: 25px;
-    padding-top: 0.4em;
   }
 `;
+
 const Role = styled("div")`
   font-size: 15px;
+  line-height: 1.5em;
 
   font-family: ${text};
   color: ${lightgreen};
 
   ${notMobile} {
     font-size: 22px;
-    padding-top: 0.4em;
   }
+`;
+
+const Timeline = styled("div")`
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+
+  font-family: ${text};
+  color: ${lightgrey};
+
+  ${notMobile} {
+    font-size: 20px;
+  }
+`;
+
+const Body = styled("div")`
+  box-sizing: border-box;
 `;
 
 const Section = styled("div")`
@@ -73,7 +97,17 @@ const Section = styled("div")`
 
   ${notMobile} {
     font-size: 23px;
-    padding-top: 1em;
+  }
+`;
+
+const Step = styled("div")`
+  font-size: 15px;
+
+  font-family: ${text};
+  color: ${lightgreen};
+
+  ${notMobile} {
+    font-size: 22px;
   }
 `;
 
@@ -81,16 +115,14 @@ const Text = styled("div")`
   font-size: 14px;
   font-family: ${text};
   color: ${grey};
+  line-height: 1.5em;
+
+  margin-bottom: 0.5em;
 
   ${notMobile} {
     font-size: 20px;
-    padding-top: 0.4em;
   }
 `;
-
-const Byline = styled("div")``;
-
-const Body = styled("div")``;
 
 export default class BR3W extends React.Component {
   render() {
@@ -101,70 +133,63 @@ export default class BR3W extends React.Component {
           <Header>BR3W</Header>
           <Description>
             <Byline>
-              <Info>
-                A coffee machine to customize the brewing and drinking
-                experience.
-              </Info>
-              <Role>machine designer and builder</Role>
+              <Info>An IOT coffee machine.</Info>
+              <Role>designer and manufacturer.</Role>
+              <Timeline>October 2019 - December 2019</Timeline>
               <Text>
-                BR3W was a project through UCLA Creative Labs where we aimed to
-                design and build a smart coffee machine from scratch.
+                BR3W was a project through UCLA Creative Labs where we created a
+                coffee machine from scratch.
               </Text>
               <Text>
-                As the mechanical engineer on an 11-person team, I used Autodesk
-                Inventor to model the housing structure for all of the inner
-                electrical and mechanical workings, then constructed it out of
-                wood. I also designed some of the specific mechanisms for the
-                brewing process.
+                As a member of the build team, I used Autodesk Inventor to model
+                the machine and constructed it out of wood; I also assisted in
+                designing specific mechanics involved in the brewing process.
               </Text>
             </Byline>
 
             <Body>
               <Section>process</Section>
-              <Role>brainstorming</Role>
+              <Step>brainstorming</Step>
               <Text>
-                As a team, we decided broadly which features we wanted to see in
-                a coffee machine.
+                As a team, decided broadly on features we would like to see in a
+                coffee machine.
               </Text>
-              <Role>sketching</Role>
+              <Step>sketching</Step>
               <Text>
-                Each member in the build team created an idealized sketch of
-                what the machine would look like and how different mechanisms
-                would be positioned together. Afterwoards, I compiled the
+                Members of the build team created sketches of the coffee machine
+                including how different mechanisms would work. I compiled the
                 sketches and created an initial design.
               </Text>
-              <Role>research and refinement</Role>
+              <Step>research and refinement</Step>
               <Text>
-                We then researched the process of coffee making. Through this,
-                we refiend and finalized our feature list and design.
+                Researched the process of coffee making and the requirements for
+                brewing espresso. Refined and finalized our feature list and
+                design.
               </Text>
-              <Role>3D modeling</Role>
+              <Step>3D modeling</Step>
               <Text>
-                I modeled the machine components in Autodesk Inventor to ensure
-                that all pieces would fit together, while maintaining space for
-                electical components. To reduce risk of print failure, we
-                decided to make the machine out of wood and only 3D print
-                components that required it.
+                Used Autodesk Inventor to model the coffee machine without the
+                electrical work. To reduce the risk of print failure, we decided
+                to build the machine out of wood and print what was necessary.
               </Text>
-              <Role>building</Role>
+              <Step>building</Step>
               <Text>
-                Undeniably the most time-consuming (but rewarding) part of this
-                process - building the structure out of wood plants and acrylic.
+                Building the structure out of repurposed wood planks and
+                acrylic.
               </Text>
-              <Role>assembly and testing</Role>
+              <Step>assembly and testing</Step>
               <Text>
                 The two weeks prior to Demo Day were dedicated to finishing
-                electrical functionalities, then assembling and testing the
-                entire coffee machine - electrical components included, to
-                ensure that everything would work.
+                electrical functionalities, assembly, testing, and
+                troubleshooting.
               </Text>
+
               <Section>results</Section>
               <Text>
-                The coffee machine we created by Demo Day allowed the user to
-                customize the temperature, cup size, and brew strength of their
-                coffee. These settings could be adjusted through an app or via
-                the touchscreen connected to the physical machine. The brewing
-                process was also monitored to notify the user when their coffee
+                The MVP we created let the user customize temperature, volume,
+                and brew strength. These settings could be adjusted through an
+                app or via the touchscreen connected to the physical machine.
+                Brew progress was monitored to notify the user when their coffee
                 was ready.
               </Text>
             </Body>
