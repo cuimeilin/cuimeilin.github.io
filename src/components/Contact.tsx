@@ -28,49 +28,62 @@ const Projects = styled("div")`
 `;
 
 const Description = styled("div")`
+  /*
   line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
 
   box-sizing: border-box;
   margin: 0.5em 0;
 
   ${notMobile} {
     box-sizing: border-box;
-    padding: 0 0 1em;
+    padding: 1em 2em 1em 0em;
+    width: 50%;
     height: auto;
   }
+  */
 `;
 
 const Name = styled("div")`
+  /*
   font-size: 18px;
 
-  font-family: ${text};
+  font-family: ${title};
   color: ${green};
 
   ${notMobile} {
-    font-size: 20px;
+    font-size: 28px;
   }
+  */
 `;
 
 const Info = styled("div")`
+  /*
   font-size: 17px;
 
   font-family: ${text};
   color: ${grey};
 
   ${notMobile} {
-    font-size: 20px;
+    font-size: 25px;
+    padding-top: 0.4em;
   }
+  */
 `;
 
 const Role = styled("div")`
+  /*
   font-size: 15px;
 
   font-family: ${text};
   color: ${grey};
 
   ${notMobile} {
-    font-size: 18px;
+    font-size: 22px;
+    padding-top: 0.4em;
   }
+  */
 `;
 
 export default class ProjectList extends React.Component {
@@ -85,30 +98,30 @@ export default class ProjectList extends React.Component {
           <Projects>
             <Description>
               <Link to="/dailybruin" style={linkStyling}>
-                <Name>The Daily Bruin →</Name>
+                <Name>Daily Bruin →</Name>
               </Link>
-              <Info>UCLA's largest newspaper.</Info>
+              <Info>UCLA's largest newspaper</Info>
               <Role>features designer and developer</Role>
             </Description>
             <Description>
               <Link to="/penelope" style={linkStyling}>
                 <Name>Penelope →</Name>
               </Link>
-              <Info>a claymation video game.</Info>
+              <Info>a claymation video game</Info>
               <Role>assets and environment modeler</Role>
             </Description>
             <Description>
               <Link to="/br3w" style={linkStyling}>
                 <Name>BR3W →</Name>
               </Link>
-              <Info>a smart coffee machine.</Info>
+              <Info>a smart coffee machine</Info>
               <Role>machiner designer and manufacturer</Role>
             </Description>
             <Description>
               <Link to="/cleanconsulting" style={linkStyling}>
                 <Name>Clean Consulting →</Name>
               </Link>
-              <Info>sustainable student organization.</Info>
+              <Info>sustainable student organization</Info>
               <Role>logo redesigner and merchandise illustrator</Role>
             </Description>
           </Projects>

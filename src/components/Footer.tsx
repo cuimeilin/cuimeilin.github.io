@@ -49,32 +49,6 @@ export default class NavBar extends React.Component {
     return (
       <FooterContent>
         <Tagline>meilin cui. 2020</Tagline>
-        <Links>
-          <a
-            style={{
-              textDecoration: "none",
-              boxSizing: "border-box",
-              margin: "0 0.5em",
-              color: "#A7D2A8",
-            }}
-            target="_blank"
-            href={"https://github.com/cuimeilin"}
-          >
-            github
-          </a>
-          <a
-            style={{
-              textDecoration: "none",
-              boxSizing: "border-box",
-              margin: "0 0.5em",
-              color: "#A7D2A8",
-            }}
-            target="_blank"
-            href={"https://www.linkedin.com/in/meilin-cui/"}
-          >
-            linkedin
-          </a>
-        </Links>
       </FooterContent>
     );
   }

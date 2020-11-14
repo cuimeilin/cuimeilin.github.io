@@ -9,8 +9,6 @@ import DailyBruin from "./pages/DailyBruin";
 import Penelope from "./pages/Penelope";
 import BR3W from "./pages/BR3W";
 import CleanConsulting from "./pages/CleanConsulting";
-import Stationery from "./pages/Stationery";
-import Art from "./pages/Art";
 
 function App() {
   return (
@@ -23,9 +21,6 @@ function App() {
           <Route exact path="/projects">
             <ProjectPage />
           </Route>
-          <Route exact path="/about">
-            <AboutPage />
-          </Route>
           <Route exact path="/dailybruin">
             <DailyBruin />
           </Route>
@@ -37,12 +32,6 @@ function App() {
           </Route>
           <Route exact path="/cleanconsulting">
             <CleanConsulting />
-          </Route>
-          <Route exact path="/stationery">
-            <ProjectPage />
-          </Route>
-          <Route exact path="/art">
-            <ProjectPage />
           </Route>
         </Switch>
       </Router>

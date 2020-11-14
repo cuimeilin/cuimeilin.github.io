@@ -152,6 +152,10 @@ export default class DailyBruin extends React.Component {
                 check out other flatpages I've worked on during my time on the
                 External Sites team.
               </Section>
+              <Step>2020 Elections</Step>
+              <Text>
+                Daily Bruin's coverage of the 2020 elections.
+              </Text>
               <Step>COVID Student Stories</Step>
               <Text>
                 Sharing student stories in light of the coronavirus pandemic.
@@ -166,8 +170,6 @@ export default class DailyBruin extends React.Component {
                 Breaking down the Democratic Primary candidates and their
                 platforms.
               </Text>
-              <Step>2020 Oscars</Step>
-              <Text>Discussing the nominees for the Oscars.</Text>
             </Body>
           </Description>
         </AboutDesc>

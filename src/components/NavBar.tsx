@@ -33,24 +33,6 @@ const Title = styled("div")`
   }
 `;
 
-const Links = styled("div")`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 15px;
-
-  ${notMobile} {
-    font-size: 20px;
-  }
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  box-sizing: border-box;
-  margin: 0.5em 1em;
-  color: ${lightgreen};
-`;
-
 export default class NavBar extends React.Component {
   render() {
     return (
@@ -59,24 +41,6 @@ export default class NavBar extends React.Component {
           <Link to="/" style={{ textDecoration: "none", color: "327034" }}>
             <Title>meilin cui</Title>
           </Link>
-          <Links>
-            <StyledLink to="/projects">projects</StyledLink>
-            <StyledLink to="/about">about</StyledLink>
-            <a
-              style={{
-                textDecoration: "none",
-                boxSizing: "border-box",
-                margin: "0.5em 1em",
-                color: "#A7D2A8",
-              }}
-              target="_blank"
-              href={
-                "https://drive.google.com/file/d/1iXLkxffNwf5DAAamJjFIce1toQ7qDGIr/view?usp=sharing"
-              }
-            >
-              resume
-            </a>
-          </Links>
         </StyledNav>
       </>
     );
