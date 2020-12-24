@@ -7,9 +7,9 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const ProjectContent = styled("div")`
-  width: 60%;
+  width: 70%;
   ${notMobile} {
-    width: 500px;
+    width: 525px;
   }
 `;
 const Project = styled("div")`
@@ -17,13 +17,14 @@ const Project = styled("div")`
   ${notMobile}{
       margin-bottom: 0;
       font-size: 18px;
-      width: 49%;
+      width: 48%;
   }
   a{
     color: ${green};
     font-family: ${sanserif};
     text-decoration: none;
     cursor: crosshair;
+    font-weight: 600;
   }
   
   a:hover {
@@ -53,6 +54,7 @@ const Content = styled("div")`
 const Name = styled("div")`
   color: ${green};
   font-family: ${sanserif};
+  font-weight: 600;
 `;
 const Organization = styled("div")`
   color: ${grey};
@@ -69,14 +71,14 @@ export default function Projects() {
       <Heading>Projects</Heading>
       <Content>
       <Project>
-        <a href="https://dl.acm.org/doi/abs/10.1145/3379337.3415826" target="_blank">ROMEO</a>
-        <Organization>UCLA Human Computer Interaction Labs.</Organization>
-        <Description>Digital function agumentation tool.</Description>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3379337.3415826" target="_blank" rel="noopener noreferrer">ROMEO ↗</a>
+        <Organization>UCLA Human Computer Interaction Labs</Organization>
+        <Description>Designed the user interface for a digital function agumentation tool.</Description>
       </Project>
       <Project>
         <Name>BR3W</Name>
-        <Organization>UCLA Creative Labs - Fall 2019.</Organization>
-        <Description>Smart coffee machine.</Description>
+        <Organization>UCLA Creative Labs - Fall 2019</Organization>
+        <Description>Manufactured the shell of a smart coffee machine.</Description>
       </Project>
       </Content>
     </ProjectContent>

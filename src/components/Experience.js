@@ -7,10 +7,10 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const ExperienceContent = styled("div")`
-  width: 60%;
+  width: 70%;
   margin-bottom: 1.5em;
   ${notMobile} {
-    width: 500px;
+    width: 525px;
   }
 `;
 const Experiences = styled("div")`
@@ -24,6 +24,7 @@ a{
   font-family: ${sanserif};
   text-decoration: none;
   cursor: crosshair;
+  font-weight: 600;
 }
 
 a:hover {
@@ -42,11 +43,12 @@ const Heading = styled("div")`
       margin-bottom: 0.5em;
   }
 `;
+/*
 const Company = styled("div")`
   color: ${green};
   font-family: ${sanserif};
 `;
-
+*/
 const Position = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
@@ -71,9 +73,9 @@ export default function Experience() {
     <ExperienceContent>
       <Heading>Experience</Heading>
       <Experiences>
-        <a href="https://dailybruin.com/" target="_blank">The Daily Bruin - External Sites</a>
+        <a href="https://dailybruin.com/" target="_blank" rel="noopener noreferrer">The Daily Bruin - External Sites ↗</a>
         <Position>Software Engineering Intern</Position>
-        <Timeframe>January 2020 - present.</Timeframe>
+        <Timeframe>January 2020 - present</Timeframe>
         <Description>
           Implementing interactive tools and components for story-specific
           flatpages using React.js, Typescript, and Javascript. Currently
@@ -81,9 +83,9 @@ export default function Experience() {
         </Description>
       </Experiences>
       <Experiences>
-        <a href="https://cleanconsulting.org/" target="_blank">Clean Consulting at UCLA</a>
+        <a href="https://cleanconsulting.org/" target="_blank" rel="noopener noreferrer">Clean Consulting at UCLA ↗</a>
         <Position>Graphic Designer</Position>
-        <Timeframe>May 2019 - May 2020.</Timeframe>
+        <Timeframe>May 2019 - May 2020</Timeframe>
         <Description>
           Designed flyers, posters, and social media posts using Affinity
           products to promote events that raised awareness towards sustainable

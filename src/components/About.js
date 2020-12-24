@@ -7,11 +7,11 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const AboutContent = styled("div")`
-  width: 60%;
+  width: 70%;
   margin-bottom: 2.5em;
 
   ${notMobile} {
-    width: 500px;
+    width: 525px;
   }
 `;
 const Maintext = styled("div")`
@@ -20,7 +20,7 @@ const Maintext = styled("div")`
   margin-bottom: 0.5em;
   font-size: 20px;
 
-  ${notMobile}{
+  ${notMobile} {
     font-size: 28px;
     margin-bottom: 0.5em;
   }
@@ -30,7 +30,7 @@ const Subtext = styled("div")`
   font-family: ${sanserif};
   margin-bottom: 0.5em;
 
-  ${notMobile}{
+  ${notMobile} {
     font-size: 18px;
   }
 `;
@@ -40,9 +40,9 @@ export default function About() {
     <AboutContent>
       <Maintext>Hi, I'm Meilin.</Maintext>
       <Subtext>
-        I'm a fourth year a UCLA studying mathematics of computation. Currently
-        developing interactive, story-specific websites for the Daily Bruin, the
-        university's largest newspaper.
+        I'm a fourth year at UCLA studying mathematics of computation.
+        Currently, I'm developing story websites for the Daily Bruin, our
+        university newspaper.
       </Subtext>
       <Subtext>
         A fun fact about myself: I was a mechanical engineering major for 8
@@ -50,9 +50,11 @@ export default function About() {
         spring of my third year.
       </Subtext>
       <Subtext>
-        I'm looking to pursue web or (math-heavier) software development after I
-        complete my undergraduate studies. Feel free to reach out if you'd like
-        to know more about me, my interests, or just want to chat.
+        I'm looking to pursue web or software development after I complete my
+        undergraduate studies. I've also become interested in exploring fields of
+        computer science that rely on discrete mathematics. Feel free to reach
+        out if you'd like to know more about me, my interests, or just want to
+        chat.
       </Subtext>
     </AboutContent>
   );

@@ -7,11 +7,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
-import { colors, fonts, mediaQueries } from "./shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
-const { serif, sanserif } = fonts;
-const { notMobile } = mediaQueries;
-
 const Body = styled("div")`
   display: flex;
   flex-direction: column;
