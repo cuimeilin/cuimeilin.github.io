@@ -11,7 +11,7 @@ const AboutContent = styled("div")`
   margin-bottom: 2.5em;
 
   ${notMobile} {
-    width: 525px;
+    width: 550px;
   }
 `;
 const Maintext = styled("div")`
