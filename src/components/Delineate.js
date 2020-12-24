@@ -8,7 +8,7 @@ const { notMobile } = mediaQueries;
 
 const Divider = styled("div")`
   width: 75%;
-  padding: 1.5em 0;
+  padding: 1.75em 0;
   color: ${green};
   font-family: ${sanserif};
   font-size: 15px;
@@ -21,5 +21,5 @@ const Divider = styled("div")`
 `;
 
 export default function Delineate() {
-  return <Divider>□</Divider>;
+  return <Divider>{/*□*/}</Divider>;
 }
