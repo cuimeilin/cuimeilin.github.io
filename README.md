@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [cuimeilin.github.io](https://cuimeilin.github.io)
+
+This is the GitHub repository for my site, found at the link above :) Originally created in 2017 using vanilla HTML/CSS, I've been constantly changing the design in the hope of attaining my website aesthetic dreams.
+
+Currently, it is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and coded using Javascript.
+
+I'll be creating a "style guide" (if you could even call it that) in the future, with details on fonts, colors, etc. which will be linked here as well.
+
+Feel free to reach out to me via email at [meilincui.99@gmail.com](mailto:meilincui.99@gmail.com) for any feedback or suggestions (or typo warnings).
+
+---
+
+The following is the default README when a React App is created:
 
 ## Available Scripts
 
