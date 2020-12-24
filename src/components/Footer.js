@@ -8,6 +8,7 @@ const { notMobile } = mediaQueries;
 
 const FooterContent = styled("div")`
   padding: 0 6vw 3vh;
+  line-height: 1.5;
 
   ${notMobile} {
     padding: 0 0 3vh;

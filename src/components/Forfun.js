@@ -7,7 +7,7 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const Briefly = styled("div")`
-  width: 75%;
+  width: 77%;
   font-family: ${sanserif};
 
   ${notMobile} {
@@ -20,6 +20,7 @@ const Briefly = styled("div")`
     padding-left: 1em;
     margin: 0;
     font-size: 15px;
+    line-height: 1.5;
 
     ${notMobile} {
       font-size: 18px;

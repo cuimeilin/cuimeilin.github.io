@@ -7,16 +7,38 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const ExperienceContent = styled("div")`
-  width: 75%;
-  margin-bottom: 2.5em;
+  width: 77%;
 
   ${notMobile} {
     width: 550px;
   }
 `;
+
 const Experiences = styled("div")`
   margin-bottom: 1em;
   font-size: 15px;
+  line-height: 1.5;
+
+  ${notMobile} {
+    font-size: 18px;
+  }
+
+  a {
+    color: ${green};
+    font-family: ${sanserif};
+    text-decoration: none;
+    cursor: crosshair;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: ${darkgreen};
+  }
+`;
+
+const Experiences1 = styled("div")`
+  font-size: 15px;
+  line-height: 1.5;
 
   ${notMobile} {
     font-size: 18px;
@@ -91,7 +113,7 @@ export default function Experience() {
           working on building a website dedicated to External Sites projects.
         </Description>
       </Experiences>
-      <Experiences>
+      <Experiences1>
         <a
           href="https://cleanconsulting.org/"
           target="_blank"
@@ -107,7 +129,7 @@ export default function Experience() {
           practices and behaviors. Revamped the organization's logo and shirt
           design for the 2020 merchandise fundraiser.
         </Description>
-      </Experiences>
+      </Experiences1>
     </ExperienceContent>
   );
 }

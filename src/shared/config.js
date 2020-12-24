@@ -1,8 +1,8 @@
 export const colors = {
   darkgreen: "#327034",
   green: "#569957",
-  darkgrey: "#414141",
-  grey: "#6A6A6A",
+  darkgrey: "#303030",
+  grey: "#7D7D7D",
   beige: "#FFFBF0",
 };
 

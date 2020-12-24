@@ -7,8 +7,8 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const ProjectContent = styled("div")`
-  width: 75%;
-  margin-bottom: 2.5em;
+  width: 77%;
+
   ${notMobile} {
     width: 550px;
   }
@@ -16,6 +16,28 @@ const ProjectContent = styled("div")`
 const Project = styled("div")`
   margin-bottom: 1em;
   font-size: 15px;
+  line-height: 1.5;
+
+  ${notMobile} {
+    font-size: 18px;
+    width: 48%;
+  }
+  a {
+    color: ${green};
+    font-family: ${sanserif};
+    text-decoration: none;
+    cursor: crosshair;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: ${darkgreen};
+  }
+`;
+
+const Project1 = styled("div")`
+  font-size: 15px;
+  line-height: 1.5;
 
   ${notMobile} {
     font-size: 18px;
@@ -94,18 +116,18 @@ export default function Projects() {
             Manufactured the shell of a smart coffee machine.
           </Description>
         </Project>
-        <Project>
+        <Project1>
           <Name>Penelope</Name>
           <Organization>UCLA Creative Labs - Fall 2019</Organization>
           <Description>
             Modeled assets for a claymation horror video game.
           </Description>
-        </Project>
-        <Project>
+        </Project1>
+        <Project1>
           <Name>Art</Name>
           <Organization>Personal projects</Organization>
           <Description>Currently under construction.</Description>
-        </Project>
+        </Project1>
       </Content>
     </ProjectContent>
   );

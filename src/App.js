@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Coursework from "./components/Coursework";
 import Forfun from "./components/Forfun";
+import Delineate from "./components/Delineate";
 
 const Body = styled("div")`
   display: flex;
@@ -21,15 +22,16 @@ function App() {
     <div className="App">
       <Body>
         <About />
+        <Delineate />
         {/*<Coursework />*/}
         <Experience />
+        <Delineate />
         <Projects />
+        <Delineate />
         <Forfun />
-
       </Body>
       <Footer />
     </div>
-
   );
 }
 
