@@ -36,6 +36,17 @@ const Subtext = styled("div")`
   }
 `;
 
+const Subtext1 = styled("div")`
+  color: ${darkgrey};
+  font-family: ${sanserif};
+  font-size: 15px;
+  line-height: 1.5;
+
+  ${notMobile} {
+    font-size: 18px;
+  }
+`;
+
 export default function About() {
   return (
     <AboutContent>
@@ -50,13 +61,13 @@ export default function About() {
         quarters before making the jump to switch to mathematics during the
         spring of my third year.
       </Subtext>
-      <Subtext>
+      <Subtext1>
         I'm looking to pursue web or software development after I complete my
         undergraduate studies. I've also become interested in exploring fields
         of computer science that rely on discrete mathematics. Feel free to
         reach out if you'd like to know more about me, my interests, or just
         want to chat.
-      </Subtext>
+      </Subtext1>
     </AboutContent>
   );
 }
