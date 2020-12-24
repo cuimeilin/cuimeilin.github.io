@@ -23,13 +23,14 @@ const Links = styled("div")`
   flex-direction: column;
   
   a {
-    color: ${darkgrey};
+    color: ${green};
     font-family: ${sanserif};
     text-decoration: none;
+    cursor: crosshair;
   }
 
   a:hover {
-    color: ${green};
+    color: ${darkgreen};
   }
 `;
 
@@ -40,7 +41,7 @@ export default function Footer() {
       <FooterContent>
         <Tagline>meilin cui. 2020</Tagline>
         <Links>
-          <a href="">Email</a>
+          <a href="mailto:meilincui.99@gmail.com">Email</a>
           <a href={"https://www.linkedin.com/in/meilin-cui"} target="_blank">LinkedIn</a>
           <a href={"https://www.github.com/cuimeilin"} target="_blank">Github</a>
         </Links>

@@ -18,6 +18,17 @@ const Experiences = styled("div")`
   ${notMobile}{
     font-size: 18px;
 }
+
+a{
+  color: ${green};
+  font-family: ${sanserif};
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+a:hover {
+  color: ${darkgreen};
+}
 `;
 
 const Heading = styled("div")`
@@ -34,6 +45,7 @@ const Company = styled("div")`
   color: ${green};
   font-family: ${sanserif};
 `;
+
 const Position = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
@@ -56,7 +68,7 @@ export default function Experience() {
     <ExperienceContent>
       <Heading>Experience</Heading>
       <Experiences>
-        <Company>The Daily Bruin - External Sites</Company>
+        <a href="https://dailybruin.com/" target="_blank">The Daily Bruin - External Sites</a>
         <Position>Software Engineering Intern</Position>
         <Timeframe>January 2020 - present.</Timeframe>
         <Description>
@@ -66,7 +78,7 @@ export default function Experience() {
         </Description>
       </Experiences>
       <Experiences>
-        <Company>Clean Consulting at UCLA</Company>
+        <a href="https://cleanconsulting.org/" target="_blank">Clean Consulting at UCLA</a>
         <Position>Graphic Designer</Position>
         <Timeframe>May 2019 - May 2020.</Timeframe>
         <Description>

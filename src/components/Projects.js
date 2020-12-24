@@ -19,6 +19,16 @@ const Project = styled("div")`
       font-size: 18px;
       width: 49%;
   }
+  a{
+    color: ${green};
+    font-family: ${sanserif};
+    text-decoration: none;
+    cursor: crosshair;
+  }
+  
+  a:hover {
+    color: ${darkgreen};
+  }
 `;
 
 const Heading = styled("div")`
@@ -58,7 +68,7 @@ export default function Projects() {
       <Heading>Projects</Heading>
       <Content>
       <Project>
-        <Name>ROMEO</Name>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3379337.3415826" target="_blank">ROMEO</a>
         <Organization>UCLA Human Computer Interaction Labs.</Organization>
         <Description>Digital function agumentation tool.</Description>
       </Project>
