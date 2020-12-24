@@ -54,9 +54,9 @@ export default function Footer() {
       <FooterContent>
         <Tagline>meilin cui. 2021.</Tagline>
         <Links>
-          <a href="mailto:meilincui.99@gmail.com">email 🡥</a>
-          <a href={"https://www.linkedin.com/in/meilin-cui"} target="_blank" rel="noopener noreferrer">linkedin 🡥</a>
-          <a href={"https://www.github.com/cuimeilin"} target="_blank" rel="noopener noreferrer">github 🡥</a>
+          <a href="mailto:meilincui.99@gmail.com">email →</a>
+          <a href={"https://www.linkedin.com/in/meilin-cui"} target="_blank" rel="noopener noreferrer">linkedin →</a>
+          <a href={"https://www.github.com/cuimeilin"} target="_blank" rel="noopener noreferrer">github →</a>
         </Links>
       </FooterContent>
     );

@@ -8,6 +8,7 @@ const { notMobile } = mediaQueries;
 
 const ProjectContent = styled("div")`
   width: 70%;
+  margin-bottom: 2.5em;
   ${notMobile} {
     width: 550px;
   }
@@ -71,7 +72,7 @@ export default function Projects() {
       <Heading>Projects</Heading>
       <Content>
       <Project>
-        <a href="https://dl.acm.org/doi/abs/10.1145/3379337.3415826" target="_blank" rel="noopener noreferrer">ROMEO 🡥</a>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3379337.3415826" target="_blank" rel="noopener noreferrer">ROMEO →</a>
         <Organization>UCLA Human Computer Interaction Labs</Organization>
         <Description>Designed the user interface for a digital function augmentation tool.</Description>
       </Project>

@@ -38,11 +38,11 @@ const Subtext = styled("div")`
 export default function About() {
   return (
     <AboutContent>
-      <Maintext>Hi, I'm Meilin.</Maintext>
+      <Maintext>Hi, I'm Meilin (they/them).</Maintext>
       <Subtext>
         I'm a fourth year at UCLA studying mathematics of computation.
         Currently, I'm developing story websites for the Daily Bruin, our
-        university newspaper.
+        university's newspaper.
       </Subtext>
       <Subtext>
         A fun fact about myself: I was a mechanical engineering major for 8

@@ -8,7 +8,7 @@ const { notMobile } = mediaQueries;
 
 const ExperienceContent = styled("div")`
   width: 70%;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
   ${notMobile} {
     width: 550px;
   }
@@ -73,7 +73,7 @@ export default function Experience() {
     <ExperienceContent>
       <Heading>Experience</Heading>
       <Experiences>
-        <a href="https://dailybruin.com/" target="_blank" rel="noopener noreferrer">The Daily Bruin - External Sites 🡥</a>
+        <a href="https://dailybruin.com/" target="_blank" rel="noopener noreferrer">The Daily Bruin - External Sites →</a>
         <Position>Software Engineering Intern</Position>
         <Timeframe>January 2020 - present</Timeframe>
         <Description>
@@ -83,7 +83,7 @@ export default function Experience() {
         </Description>
       </Experiences>
       <Experiences>
-        <a href="https://cleanconsulting.org/" target="_blank" rel="noopener noreferrer">Clean Consulting at UCLA 🡥</a>
+        <a href="https://cleanconsulting.org/" target="_blank" rel="noopener noreferrer">Clean Consulting at UCLA →</a>
         <Position>Graphic Designer</Position>
         <Timeframe>May 2019 - May 2020</Timeframe>
         <Description>
