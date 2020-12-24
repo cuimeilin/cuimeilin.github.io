@@ -8,8 +8,8 @@ const { notMobile } = mediaQueries;
 
 const FooterContent = styled("div")`
   padding: 0 6vw 3vh;
-  
-  ${notMobile}{
+
+  ${notMobile} {
     padding: 0 0 3vh;
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,9 @@ const FooterContent = styled("div")`
 const Tagline = styled("div")`
   color: ${darkgreen};
   font-family: ${serif};
-  ${notMobile}{
+  font-size: 15px;
+
+  ${notMobile} {
     font-size: 18px;
   }
 `;
@@ -28,8 +30,8 @@ const Tagline = styled("div")`
 const Links = styled("div")`
   display: flex;
   flex-direction: column;
-  font-size: 15px;
-  
+  font-size: 14px;
+
   a {
     color: ${green};
     font-family: ${sanserif};
@@ -41,24 +43,33 @@ const Links = styled("div")`
     color: ${darkgreen};
   }
 
-  ${notMobile}{
+  ${notMobile} {
     font-size: 16px;
     text-align: right;
   }
 `;
 
-
 export default function Footer() {
-
-    return (
-      <FooterContent>
-        <Tagline>meilin cui. 2021.</Tagline>
-        <Links>
-          <a href="mailto:meilincui.99@gmail.com">email →</a>
-          <a href={"https://www.linkedin.com/in/meilin-cui"} target="_blank" rel="noopener noreferrer">linkedin →</a>
-          <a href={"https://www.github.com/cuimeilin"} target="_blank" rel="noopener noreferrer">github →</a>
-        </Links>
-      </FooterContent>
-    );
-
+  return (
+    <FooterContent>
+      <Tagline>meilin cui. 2021.</Tagline>
+      <Links>
+        <a href="mailto:meilincui.99@gmail.com">email →</a>
+        <a
+          href={"https://www.linkedin.com/in/meilin-cui"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          linkedin →
+        </a>
+        <a
+          href={"https://www.github.com/cuimeilin"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github →
+        </a>
+      </Links>
+    </FooterContent>
+  );
 }

@@ -7,29 +7,32 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const ExperienceContent = styled("div")`
-  width: 70%;
+  width: 75%;
   margin-bottom: 2.5em;
+
   ${notMobile} {
     width: 550px;
   }
 `;
 const Experiences = styled("div")`
   margin-bottom: 1em;
-  ${notMobile}{
+  font-size: 15px;
+
+  ${notMobile} {
     font-size: 18px;
-}
+  }
 
-a{
-  color: ${green};
-  font-family: ${sanserif};
-  text-decoration: none;
-  cursor: crosshair;
-  font-weight: 600;
-}
+  a {
+    color: ${green};
+    font-family: ${sanserif};
+    text-decoration: none;
+    cursor: crosshair;
+    font-weight: 600;
+  }
 
-a:hover {
-  color: ${darkgreen};
-}
+  a:hover {
+    color: ${darkgreen};
+  }
 `;
 
 const Heading = styled("div")`
@@ -38,9 +41,9 @@ const Heading = styled("div")`
   margin-bottom: 0.5em;
   font-size: 18px;
 
-  ${notMobile}{
-      font-size: 23px;
-      margin-bottom: 0.5em;
+  ${notMobile} {
+    font-size: 23px;
+    margin-bottom: 0.5em;
   }
 `;
 /*
@@ -57,10 +60,10 @@ const Timeframe = styled("div")`
   color: ${grey};
   font-family: ${sanserif};
   margin-bottom: 0.25em;
-  font-size: 15px;
+  font-size: 14px;
 
-  ${notMobile}{
-      font-size: 16px;
+  ${notMobile} {
+    font-size: 16px;
   }
 `;
 const Description = styled("div")`
@@ -73,7 +76,13 @@ export default function Experience() {
     <ExperienceContent>
       <Heading>Experience</Heading>
       <Experiences>
-        <a href="https://dailybruin.com/" target="_blank" rel="noopener noreferrer">The Daily Bruin - External Sites →</a>
+        <a
+          href="https://dailybruin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          The Daily Bruin - External Sites →
+        </a>
         <Position>Software Engineering Intern</Position>
         <Timeframe>January 2020 - present</Timeframe>
         <Description>
@@ -83,7 +92,13 @@ export default function Experience() {
         </Description>
       </Experiences>
       <Experiences>
-        <a href="https://cleanconsulting.org/" target="_blank" rel="noopener noreferrer">Clean Consulting at UCLA →</a>
+        <a
+          href="https://cleanconsulting.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Clean Consulting at UCLA →
+        </a>
         <Position>Graphic Designer</Position>
         <Timeframe>May 2019 - May 2020</Timeframe>
         <Description>

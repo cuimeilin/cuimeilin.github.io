@@ -7,7 +7,7 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const ProjectContent = styled("div")`
-  width: 70%;
+  width: 75%;
   margin-bottom: 2.5em;
   ${notMobile} {
     width: 550px;
@@ -15,18 +15,20 @@ const ProjectContent = styled("div")`
 `;
 const Project = styled("div")`
   margin-bottom: 1em;
-  ${notMobile}{
-      font-size: 18px;
-      width: 48%;
+  font-size: 15px;
+
+  ${notMobile} {
+    font-size: 18px;
+    width: 48%;
   }
-  a{
+  a {
     color: ${green};
     font-family: ${sanserif};
     text-decoration: none;
     cursor: crosshair;
     font-weight: 600;
   }
-  
+
   a:hover {
     color: ${darkgreen};
   }
@@ -38,17 +40,17 @@ const Heading = styled("div")`
   margin-bottom: 0.5em;
   font-size: 18px;
 
-  ${notMobile}{
+  ${notMobile} {
     font-size: 23px;
     margin-bottom: 0.5em;
-}
+  }
 `;
 
 const Content = styled("div")`
-  ${notMobile}{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+  ${notMobile} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 `;
 
@@ -71,26 +73,39 @@ export default function Projects() {
     <ProjectContent>
       <Heading>Projects</Heading>
       <Content>
-      <Project>
-        <a href="https://dl.acm.org/doi/abs/10.1145/3379337.3415826" target="_blank" rel="noopener noreferrer">ROMEO →</a>
-        <Organization>UCLA Human Computer Interaction Labs</Organization>
-        <Description>Designed the user interface for a digital function augmentation tool.</Description>
-      </Project>
-      <Project>
-        <Name>BR3W</Name>
-        <Organization>UCLA Creative Labs - Fall 2019</Organization>
-        <Description>Manufactured the shell of a smart coffee machine.</Description>
-      </Project>
-      <Project>
-        <Name>Art</Name>
-        <Organization>Personal projects</Organization>
-        <Description>Currently under construction.</Description>
-      </Project>
-      <Project>
-        <Name>Penelope</Name>
-        <Organization>UCLA Creative Labs - Fall 2019</Organization>
-        <Description>Modeled assets for a claymation horror video game.</Description>
-      </Project>
+        <Project>
+          <a
+            href="https://dl.acm.org/doi/abs/10.1145/3379337.3415826"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ROMEO →
+          </a>
+          <Organization>UCLA Human Computer Interaction Labs</Organization>
+          <Description>
+            Designed the user interface for a digital function augmentation
+            tool.
+          </Description>
+        </Project>
+        <Project>
+          <Name>BR3W</Name>
+          <Organization>UCLA Creative Labs - Fall 2019</Organization>
+          <Description>
+            Manufactured the shell of a smart coffee machine.
+          </Description>
+        </Project>
+        <Project>
+          <Name>Art</Name>
+          <Organization>Personal projects</Organization>
+          <Description>Currently under construction.</Description>
+        </Project>
+        <Project>
+          <Name>Penelope</Name>
+          <Organization>UCLA Creative Labs - Fall 2019</Organization>
+          <Description>
+            Modeled assets for a claymation horror video game.
+          </Description>
+        </Project>
       </Content>
     </ProjectContent>
   );

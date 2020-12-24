@@ -7,7 +7,7 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const Briefly = styled("div")`
-  width: 70%;
+  width: 75%;
   font-family: ${sanserif};
 
   ${notMobile} {
@@ -19,6 +19,7 @@ const Briefly = styled("div")`
     color: ${darkgrey};
     padding-left: 1em;
     margin: 0;
+    font-size: 15px;
 
     ${notMobile} {
       font-size: 18px;
@@ -49,8 +50,9 @@ export default function Forfun() {
         </li>
         <li>
           I was a huge band geek in high school and participated in the North
-          Jersey Area Band, pit orchesta, jazz band, and marching band. I've
-          been trying to learn how to play guitar (with a low success rate, unfortunately).
+          Jersey Area Band, pit orchesta, jazz band, and marching band.
+          Recently, I've been trying to learn how to play guitar (with a low
+          success rate, unfortunately).
         </li>
         <li>
           My favorite mediums are pencil and acrylic; I'm particularly bad at

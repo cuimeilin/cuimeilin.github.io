@@ -7,7 +7,7 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const AboutContent = styled("div")`
-  width: 70%;
+  width: 75%;
   margin-bottom: 2.5em;
 
   ${notMobile} {
@@ -29,6 +29,7 @@ const Subtext = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
   margin-bottom: 0.5em;
+  font-size: 15px;
 
   ${notMobile} {
     font-size: 18px;
@@ -51,10 +52,10 @@ export default function About() {
       </Subtext>
       <Subtext>
         I'm looking to pursue web or software development after I complete my
-        undergraduate studies. I've also become interested in exploring fields of
-        computer science that rely on discrete mathematics. Feel free to reach
-        out if you'd like to know more about me, my interests, or just want to
-        chat.
+        undergraduate studies. I've also become interested in exploring fields
+        of computer science that rely on discrete mathematics. Feel free to
+        reach out if you'd like to know more about me, my interests, or just
+        want to chat.
       </Subtext>
     </AboutContent>
   );
