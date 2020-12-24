@@ -34,7 +34,8 @@ a:hover {
 const Heading = styled("div")`
   color: ${darkgreen};
   font-family: ${serif};
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  font-size: 18px;
 
   ${notMobile}{
       font-size: 23px;
@@ -54,6 +55,8 @@ const Timeframe = styled("div")`
   color: ${grey};
   font-family: ${sanserif};
   margin-bottom: 0.25em;
+  font-size: 15px;
+
   ${notMobile}{
       font-size: 16px;
   }

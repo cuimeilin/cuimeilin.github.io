@@ -7,7 +7,14 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const FooterContent = styled("div")`
-  padding: 0 5vw 2.5vw;
+  padding: 0 5vw 3vh;
+  
+  ${notMobile}{
+    padding: 0 0 3vh;
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+  }
 `;
 
 const Tagline = styled("div")`
@@ -21,6 +28,7 @@ const Tagline = styled("div")`
 const Links = styled("div")`
   display: flex;
   flex-direction: column;
+  font-size: 15px;
   
   a {
     color: ${green};
@@ -32,6 +40,11 @@ const Links = styled("div")`
   a:hover {
     color: ${darkgreen};
   }
+
+  ${notMobile}{
+    font-size: 16px;
+    text-align: right;
+  }
 `;
 
 
@@ -39,11 +52,11 @@ export default function Footer() {
 
     return (
       <FooterContent>
-        <Tagline>meilin cui. 2020</Tagline>
+        <Tagline>meilin cui. 2021</Tagline>
         <Links>
-          <a href="mailto:meilincui.99@gmail.com">Email</a>
-          <a href={"https://www.linkedin.com/in/meilin-cui"} target="_blank">LinkedIn</a>
-          <a href={"https://www.github.com/cuimeilin"} target="_blank">Github</a>
+          <a href="mailto:meilincui.99@gmail.com">email</a>
+          <a href={"https://www.linkedin.com/in/meilin-cui"} target="_blank">linkedin</a>
+          <a href={"https://www.github.com/cuimeilin"} target="_blank">github</a>
         </Links>
       </FooterContent>
     );

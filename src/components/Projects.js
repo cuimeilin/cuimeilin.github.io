@@ -34,7 +34,8 @@ const Project = styled("div")`
 const Heading = styled("div")`
   color: ${darkgreen};
   font-family: ${serif};
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  font-size: 18px;
 
   ${notMobile}{
     font-size: 23px;

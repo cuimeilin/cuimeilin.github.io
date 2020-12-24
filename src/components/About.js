@@ -17,7 +17,8 @@ const AboutContent = styled("div")`
 const Maintext = styled("div")`
   color: ${darkgreen};
   font-family: ${serif};
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  font-size: 20px;
 
   ${notMobile}{
     font-size: 28px;
