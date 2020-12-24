@@ -8,6 +8,7 @@ const { notMobile } = mediaQueries;
 
 const Briefly = styled("div")`
   width: 70%;
+  font-family: ${sanserif};
 
   ${notMobile} {
     width: 550px;
@@ -25,13 +26,6 @@ const Briefly = styled("div")`
   }
 `;
 
-const Experiences = styled("div")`
-  margin-bottom: 1em;
-  ${notMobile} {
-    font-size: 18px;
-  }
-`;
-
 const Heading = styled("div")`
   color: ${darkgreen};
   font-family: ${serif};
@@ -42,25 +36,6 @@ const Heading = styled("div")`
     font-size: 23px;
     margin-bottom: 0.5em;
   }
-`;
-
-const Position = styled("div")`
-  color: ${darkgrey};
-  font-family: ${sanserif};
-`;
-const Timeframe = styled("div")`
-  color: ${grey};
-  font-family: ${sanserif};
-  margin-bottom: 0.25em;
-  font-size: 15px;
-
-  ${notMobile} {
-    font-size: 16px;
-  }
-`;
-const Description = styled("div")`
-  color: ${darkgrey};
-  font-family: ${sanserif};
 `;
 
 export default function Forfun() {
