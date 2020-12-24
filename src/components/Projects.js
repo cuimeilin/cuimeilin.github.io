@@ -95,16 +95,16 @@ export default function Projects() {
           </Description>
         </Project>
         <Project>
-          <Name>Art</Name>
-          <Organization>Personal projects</Organization>
-          <Description>Currently under construction.</Description>
-        </Project>
-        <Project>
           <Name>Penelope</Name>
           <Organization>UCLA Creative Labs - Fall 2019</Organization>
           <Description>
             Modeled assets for a claymation horror video game.
           </Description>
+        </Project>
+        <Project>
+          <Name>Art</Name>
+          <Organization>Personal projects</Organization>
+          <Description>Currently under construction.</Description>
         </Project>
       </Content>
     </ProjectContent>
