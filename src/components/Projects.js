@@ -38,6 +38,29 @@ const Project = styled("div")`
 const Project1 = styled("div")`
   font-size: 15px;
   line-height: 1.5;
+  margin-bottom: 1em;
+
+  ${notMobile} {
+    font-size: 18px;
+    width: 48%;
+    margin-bottom: 0;
+  }
+  a {
+    color: ${green};
+    font-family: ${sanserif};
+    text-decoration: none;
+    cursor: crosshair;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: ${darkgreen};
+  }
+`;
+
+const Project2 = styled("div")`
+  font-size: 15px;
+  line-height: 1.5;
 
   ${notMobile} {
     font-size: 18px;
@@ -123,11 +146,11 @@ export default function Projects() {
             Modeled assets for a claymation horror video game.
           </Description>
         </Project1>
-        <Project1>
+        <Project2>
           <Name>Art</Name>
           <Organization>Personal projects</Organization>
           <Description>Currently under construction.</Description>
-        </Project1>
+        </Project2>
       </Content>
     </ProjectContent>
   );
