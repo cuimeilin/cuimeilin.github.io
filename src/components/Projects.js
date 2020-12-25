@@ -141,7 +141,9 @@ export default function Projects() {
         </Project>
         <Project1>
           <Name>Penelope</Name>
-          <Organization>UCLA Creative Labs - Fall 2019</Organization>
+          <Organization>
+            UCLA Creative Labs - Fall 2019, Winter 2020
+          </Organization>
           <Description>
             Modeled assets for a claymation horror video game.
           </Description>
