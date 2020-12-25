@@ -53,7 +53,7 @@ const Links = styled("div")`
 export default function Footer() {
   return (
     <FooterContent>
-      <Tagline>made with ♥ mncui 2021.</Tagline>
+      <Tagline>made with ♥ cuimn 2021.</Tagline>
       <Links>
         <a href="mailto:meilincui.99@gmail.com">email →</a>
         <a
@@ -64,7 +64,7 @@ export default function Footer() {
           linkedin →
         </a>
         <a
-          href={"https://www.github.com/cuimeilin"}
+          href={"https://www.github.com/cuimn"}
           target="_blank"
           rel="noopener noreferrer"
         >

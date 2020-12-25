@@ -1,4 +1,4 @@
-## [cuimeilin.github.io](https://cuimeilin.github.io)
+## [cuimn.github.io](https://cuimn.github.io)
 
 This is the GitHub repository for my site, found at the link above :) Originally created in 2017 using vanilla HTML/CSS, I've been constantly changing the design in the hope of attaining my website aesthetic dreams.
 
