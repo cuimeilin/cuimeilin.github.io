@@ -128,15 +128,15 @@ export default function Projects() {
           </a>
           <Organization>UCLA Human Computer Interaction Labs</Organization>
           <Description>
-            Designed the user interface for a digital function augmentation
-            tool.
+            Designed the user interface for a tool that augmented functionality
+            of 3D models.
           </Description>
         </Project>
         <Project>
           <Name>BR3W</Name>
           <Organization>UCLA Creative Labs - Fall 2019</Organization>
           <Description>
-            Manufactured the shell of a smart coffee machine.
+            Designed and manufactured the shell of a smart coffee machine.
           </Description>
         </Project>
         <Project1>
@@ -148,11 +148,6 @@ export default function Projects() {
             Modeled assets for a claymation horror video game.
           </Description>
         </Project1>
-        <Project2>
-          <Name>Art</Name>
-          <Organization>Personal projects</Organization>
-          <Description>Currently under construction.</Description>
-        </Project2>
       </Content>
     </ProjectContent>
   );

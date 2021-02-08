@@ -96,7 +96,7 @@ const Description = styled("div")`
 export default function Experience() {
   return (
     <ExperienceContent>
-      <Heading>Experience</Heading>
+      <Heading>Involvement and Experience</Heading>
       <Experiences>
         <a
           href="https://dailybruin.com/"
@@ -109,8 +109,12 @@ export default function Experience() {
         <Timeframe>January 2020 - present</Timeframe>
         <Description>
           Implementing interactive tools and components for story-specific
-          flatpages using React.js, Typescript, and Javascript. Currently
-          working on building a website dedicated to External Sites projects.
+          flatpages using React.js, Typescript, and JavaScript.
+        </Description>
+        <Description>
+          Currently working on Features, a website dedicated to External Sites
+          projects, and Carbon, a flatpage builder to streamline the request and
+          deployment process.
         </Description>
       </Experiences>
       <Experiences1>
@@ -126,8 +130,11 @@ export default function Experience() {
         <Description>
           Designed flyers, posters, and social media posts using Affinity
           products to promote events that raised awareness towards sustainable
-          practices and behaviors. Revamped the organization's logo and shirt
-          design for the 2020 merchandise fundraiser.
+          practices and behaviors.
+        </Description>
+        <Description>
+          Revamped the organization's logo and shirt design for the 2020
+          merchandise fundraiser.
         </Description>
       </Experiences1>
     </ExperienceContent>

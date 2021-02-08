@@ -62,11 +62,11 @@ export default function About() {
         spring of my third year.
       </Subtext>
       <Subtext1>
-        I'm looking to pursue web or software development after I complete my
-        undergraduate studies. I've also become interested in exploring fields
-        of computer science that rely on discrete mathematics. Feel free to
-        reach out if you'd like to know more about me, my interests, or just
-        want to chat.
+        I'm looking to pursue web development or data analytics after I complete
+        my undergraduate studies. I'm interested in applications of discrete
+        mathematics in computer science and how data analytics can be used to
+        influence policy and decision-making. Feel free to reach out if you'd
+        like to know more about me, my interests, or just want to chat.
       </Subtext1>
     </AboutContent>
   );

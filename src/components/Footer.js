@@ -53,7 +53,7 @@ const Links = styled("div")`
 export default function Footer() {
   return (
     <FooterContent>
-      <Tagline>made with ♡ cuimn 2021.</Tagline>
+      <Tagline>made with ♡ meilin cui.</Tagline>
       <Links>
         <a href="mailto:meilincui.99@gmail.com">email →</a>
         <a
