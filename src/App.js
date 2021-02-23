@@ -13,7 +13,6 @@ import "./App.css";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer";
 import Coursework from "./components/Coursework";
 import Forfun from "./components/Forfun";
 import Delineate from "./components/Delineate";
@@ -26,6 +25,7 @@ const Body = styled("div")`
 `;
 */
 
+import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Abt from "./pages/Abt";
 
@@ -34,21 +34,25 @@ import "./App.css";
 import { colors, fonts, mediaQueries } from "./shared/config";
 const { darkgreen, green, darkgrey, grey, beige } = colors;
 const { serif, sanserif } = fonts;
-const { notMobile } = mediaQueries;
+const { notMobile, largeDesktop } = mediaQueries;
 
 const Nav = styled("div")`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 77%;
+  width: 77vw;
   margin: auto;
 
   padding-top: 1.5em;
 
   ${notMobile} {
-    width: 775px;
+    width: 55vw;
     padding-top: 2em;
+  }
+
+  ${largeDesktop} {
+    width: 1000px;
   }
 `;
 
@@ -73,7 +77,7 @@ const Header = styled("div")`
 
 const Links = styled("div")`
   font-size: 15px;
-  width: 40%;
+  width: 35%;
   font-family: ${sanserif};
 
   ${notMobile} {
@@ -89,7 +93,7 @@ const Links = styled("div")`
     font-family: ${sanserif};
     text-decoration: none;
     cursor: crosshair;
-    font-weight: normal;
+    font-weight: 600;
   }
 
   a:hover {
@@ -103,11 +107,11 @@ function App() {
       <div className="App">
         <Nav>
           <Header>
-            <Link to="/">mncui</Link>
+            <Link to="/">mncui.</Link>
           </Header>
           <Links>
-            <Link to="/">home</Link>
-            <Link to="/about">about</Link>
+            <Link to="/">HOME</Link>
+            <Link to="/about">ABOUT</Link>
           </Links>
         </Nav>
         <Switch>
@@ -118,6 +122,7 @@ function App() {
             <Landing />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </HashRouter>
 

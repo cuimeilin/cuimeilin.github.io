@@ -4,13 +4,17 @@ import styled from "@emotion/styled";
 import { colors, fonts, mediaQueries } from "../shared/config";
 const { darkgreen, green, darkgrey, grey, beige } = colors;
 const { serif, sanserif } = fonts;
-const { notMobile } = mediaQueries;
+const { notMobile, largeDesktop } = mediaQueries;
 
 const ProjectContent = styled("div")`
-  width: 77%;
+  width: 77vw;
 
   ${notMobile} {
-    width: 550px;
+    width: 45vw;
+  }
+
+  ${largeDesktop} {
+    width: 900px;
   }
 `;
 const Project = styled("div")`
@@ -126,7 +130,7 @@ const Tools = styled("div")`
 export default function Projects() {
   return (
     <ProjectContent>
-      <Heading>Projects</Heading>
+      <Heading>PROJECTS</Heading>
       <Content>
         <Project>
           <a

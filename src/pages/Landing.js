@@ -23,7 +23,7 @@ const Body = styled("div")`
 
 function Landing() {
   return (
-    <div className="App">
+    <div className="MainBody">
       <Body>
         <About />
         <Delineate />
@@ -31,8 +31,9 @@ function Landing() {
         <Experience />
         <Delineate />
         <Projects />
+        <Delineate />
+        <Coursework />
       </Body>
-      <Footer />
     </div>
   );
 }

@@ -4,13 +4,16 @@ import styled from "@emotion/styled";
 import { colors, fonts, mediaQueries } from "../shared/config";
 const { darkgreen, green, darkgrey, grey, beige } = colors;
 const { serif, sanserif } = fonts;
-const { notMobile } = mediaQueries;
+const { notMobile, largeDesktop } = mediaQueries;
 
 const ExperienceContent = styled("div")`
-  width: 77%;
+  width: 77vw;
 
   ${notMobile} {
-    width: 550px;
+    width: 45vw;
+  }
+  ${largeDesktop} {
+    width: 900px;
   }
 `;
 
@@ -132,7 +135,7 @@ const Past = styled("div")`
 export default function Experience() {
   return (
     <ExperienceContent>
-      <Heading>Involvement and Experience</Heading>
+      <Heading>INVOLVEMENT & EXPERIENCE</Heading>
       <Experiences>
         <a
           href="https://dailybruin.com/"

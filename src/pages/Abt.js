@@ -9,13 +9,17 @@ import Delineate from "../components/Delineate";
 import { colors, fonts, mediaQueries } from "../shared/config";
 const { darkgreen, green, darkgrey, grey, beige } = colors;
 const { serif, sanserif } = fonts;
-const { notMobile } = mediaQueries;
+const { notMobile, largeDesktop } = mediaQueries;
 
 const AboutContent = styled("div")`
-  width: 77%;
+  width: 77vw;
 
   ${notMobile} {
-    width: 550px;
+    width: 45vw;
+  }
+
+  ${largeDesktop} {
+    width: 900px;
   }
 `;
 const Maintext = styled("div")`
@@ -73,7 +77,7 @@ const Body = styled("div")`
 
 function Abt() {
   return (
-    <div className="App">
+    <div className="MainBody">
       <Body>
         <AboutContent>
           <Maintext>Hi, I'm Meilin.</Maintext>
@@ -103,11 +107,10 @@ function Abt() {
           </Subtext1>
         </AboutContent>
         <Delineate />
-        <Coursework />
-        <Delineate />
+        {/*<Coursework />
+        <Delineate />*/}
         <Forfun />
       </Body>
-      <Footer />
     </div>
   );
 }

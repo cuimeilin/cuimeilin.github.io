@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import { colors, fonts, mediaQueries } from "../shared/config";
 const { darkgreen, green, darkgrey, grey, beige } = colors;
 const { serif, sanserif } = fonts;
-const { notMobile } = mediaQueries;
+const { notMobile, largeDesktop } = mediaQueries;
 
 const FooterContent = styled("div")`
   padding: 0 6vw 3vh;
@@ -14,7 +14,11 @@ const FooterContent = styled("div")`
     padding: 0 0 3vh;
     display: flex;
     justify-content: space-between;
-    width: 775px;
+    width: 55vw;
+  }
+
+  ${largeDesktop} {
+    width: 1000px;
   }
 `;
 
@@ -45,7 +49,7 @@ const Links = styled("div")`
   }
 
   ${notMobile} {
-    font-size: 16px;
+    font-size: 17px;
     text-align: right;
   }
 `;
