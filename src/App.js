@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   HashRouter,
@@ -111,6 +111,9 @@ const Links = styled("div")`
 `;
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <HashRouter>
       <div className="App">

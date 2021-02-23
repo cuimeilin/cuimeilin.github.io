@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import Footer from "../components/Footer";
 import Forfun from "../components/Forfun";
-import Coursework from "../components/Coursework";
 import Delineate from "../components/Delineate";
+import Info from "../components/Info";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
 const { darkgreen, green, darkgrey, grey, beige } = colors;
@@ -22,6 +21,7 @@ const AboutContent = styled("div")`
     width: 900px;
   }
 `;
+
 const Maintext = styled("div")`
   color: ${darkgreen};
   font-family: ${serif};
@@ -101,15 +101,15 @@ function Abt() {
             engineering was not a viable career path for me.
           </Subtext>
           <Subtext1>
-            My academic interests are in discrete mathematics and its
+            My academic interests are generally in discrete mathematics and its
             applications in computer science. I'm also looking to explore how
             data can be leveraged to influence policy and decision-making.
           </Subtext1>
         </AboutContent>
         <Delineate />
-        {/*<Coursework />
-        <Delineate />*/}
         <Forfun />
+        <Delineate />
+        <Info />
       </Body>
     </div>
   );

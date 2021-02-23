@@ -46,7 +46,7 @@ const Heading = styled("div")`
 export default function Forfun() {
   return (
     <Briefly>
-      <Heading>Some more about me (just for fun)</Heading>
+      <Heading>A bit about me:</Heading>
       <ul>
         <li>
           I was born and raised in Roxbury, NJ before moving to San Diego, CA in
