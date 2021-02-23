@@ -49,6 +49,7 @@ const Subject = styled("div")`
   color: ${green};
   font-size: 15px;
   line-height: 1.5;
+  font-weight: 600;
 
   ${notMobile} {
     font-size: 18px;

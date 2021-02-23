@@ -62,8 +62,7 @@ export default function About() {
       </Subtext>
       <Subtext1>
         I'm looking to pursue web development or data analytics after I complete
-        my undergraduate studies. Feel free to reach out if you'd like to know
-        more about me, my interests, or just want to chat.
+        my undergraduate studies.
       </Subtext1>
     </AboutContent>
   );
