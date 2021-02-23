@@ -74,6 +74,7 @@ const Header = styled("div")`
 const Links = styled("div")`
   font-size: 15px;
   width: 40%;
+  font-family: ${sanserif};
 
   ${notMobile} {
     width: 150px;

@@ -84,7 +84,8 @@ function Abt() {
           <Subtext>
             A fun fact about myself: I was admitted to UCLA as a mechanical
             engineering major - and was one for 8 quarters - before making the
-            jump to switch to mathemtics during spring quarter of my third year.
+            jump to switch to mathematics during spring quarter of my third
+            year.
           </Subtext>
           <Subtext>
             I've always enjoyed working with my hands (my favorite project thus
@@ -97,7 +98,7 @@ function Abt() {
               harmonograph
             </a>{" "}
             that I built in high school) but I realized that mechanical
-            engineering was not a career I could pursue.
+            engineering was not a viable career path for me.
           </Subtext>
           <Subtext1>
             My academic interests are in discrete mathematics and its

@@ -116,9 +116,10 @@ const Tools = styled("div")`
   color: ${green};
   font-size: 14px;
   margin-top: 0.5em;
+  font-family: ${sanserif};
 
   ${notMobile} {
-    font-size: 16.5px;
+    font-size: 17px;
   }
 `;
 
