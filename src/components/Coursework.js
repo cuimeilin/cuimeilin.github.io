@@ -27,8 +27,33 @@ const Heading = styled("div")`
 
 const Courses = styled("div")`
   margin-bottom: 1em;
+  font-family: ${sanserif};
+
   ${notMobile} {
     font-size: 18px;
+  }
+
+  ul {
+    list-style-type: square;
+    color: ${darkgrey};
+    padding-left: 1em;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+
+    ${notMobile} {
+      font-size: 18px;
+    }
+  }
+`;
+
+const Courses1 = styled("div")`
+  margin-bottom: 1em;
+  font-family: ${sanserif};
+
+  ${notMobile} {
+    font-size: 18px;
+    width: 47.5%;
   }
 
   ul {
@@ -73,7 +98,7 @@ export default function Coursework() {
     <CourseContent>
       <Heading>Coursework</Heading>
       <Main>
-        <Courses>
+        <Courses1>
           <Subject>Mathematics</Subject>
           <ul>
             <li>mathematical imaging</li>
@@ -86,8 +111,8 @@ export default function Coursework() {
             <li>discrete structures</li>
             <li>introduction to probability</li>
           </ul>
-        </Courses>
-        <Courses>
+        </Courses1>
+        <Courses1>
           <Subject>Computer science</Subject>
           <ul>
             <li>introduction to data science</li>
@@ -96,7 +121,7 @@ export default function Coursework() {
             <li>introduction to computer graphics</li>
             <li>introduction to computer science (c++)</li>
           </ul>
-        </Courses>
+        </Courses1>
       </Main>
       <Courses>
         <Subject>
