@@ -32,7 +32,7 @@ import Abt from "./pages/Abt";
 import "./App.css";
 
 import { colors, fonts, mediaQueries } from "./shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
+const { darkgreen, green, darkgrey, grey, beige, darkbeige } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
@@ -41,14 +41,23 @@ const Nav = styled("div")`
   align-items: center;
   justify-content: space-between;
 
-  width: 77vw;
+  width: 80vw;
   margin: auto;
 
   padding-top: 1.5em;
+  padding-bottom: 0.5em;
+
+  position: sticky;
+  top: 0;
+
+  background: ${beige};
+
+  border-bottom: 1px solid ${darkbeige};
 
   ${notMobile} {
     width: 55vw;
     padding-top: 2em;
+    padding-bottom: 1em;
   }
 
   ${largeDesktop} {
@@ -77,7 +86,7 @@ const Header = styled("div")`
 
 const Links = styled("div")`
   font-size: 15px;
-  width: 35%;
+  width: 40%;
   font-family: ${sanserif};
 
   ${notMobile} {

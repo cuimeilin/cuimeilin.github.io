@@ -2,16 +2,18 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
+const { darkgreen, green, darkgrey, grey, beige, darkbeige } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
 const FooterContent = styled("div")`
-  padding: 0 6vw 3vh;
+  padding: 1em 0 3vh;
   line-height: 1.5;
+  border-top: 1px solid ${darkbeige};
+  width: 80vw;
 
   ${notMobile} {
-    padding: 0 0 3vh;
+    padding: 1em 0 3vh;
     display: flex;
     justify-content: space-between;
     width: 55vw;
