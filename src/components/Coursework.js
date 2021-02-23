@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
+const { green, darkgreen, grey, darkgrey, beige, darkbeige, brown } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
@@ -88,10 +88,6 @@ const Subject = styled("div")`
 }
 `;
 
-const CourseList = styled("div")`
-  color: ${darkgrey};
-`;
-
 const Main = styled("div")`
   ${notMobile} {
     display: flex;
@@ -99,49 +95,60 @@ const Main = styled("div")`
   }
 `;
 
+const Text = styled("text")`
+  color: ${brown};
+`;
+
 export default function Coursework() {
   return (
     <CourseContent>
-      <Heading>COURSEWORK</Heading>
+      <Heading>COURSEWORK (there's a lot)</Heading>
       <Main>
         <Courses1>
           <Subject>Mathematics:</Subject>
           <ul>
-            <li>mathematical imaging</li>
-            <li>mathematical cryptology</li>
+            <li>
+              mathematical imaging <Text>(spring 2021)</Text>
+            </li>
+            <li>
+              mathematical cryptology <Text>(spring 2021)</Text>
+            </li>
             <li>optimization</li>
             <li>applied numerical methods</li>
             <li>complex analysis for applications</li>
             <li>real analysis 1</li>
             <li>linear algebra</li>
             <li>discrete structures</li>
-            <li>introduction to probability</li>
+            <li>intro to probability</li>
           </ul>
         </Courses1>
         <Courses1>
           <Subject>Computer Science:</Subject>
           <ul>
-            <li>introduction to data science</li>
+            <li>
+              intro to data science <Text>(spring 2021)</Text>
+            </li>
             <li>formal languages and automata theory</li>
             <li>algorithms and complexity</li>
-            <li>introduction to computer graphics</li>
-            <li>introduction to computer science (c++)</li>
+            <li>intro to computer graphics</li>
+            <li>intro to computer science (c++)</li>
           </ul>
         </Courses1>
       </Main>
       <Courses>
-        <Subject>Mechanical Engineering (there's a lot):</Subject>
+        <Subject>Mechanical Engineering:</Subject>
         <ul>
+          <li>intro to modeling and analysis of dynamic systems</li>
           <li>advanced strength of materials</li>
-          <li>introduction to microscale and nanoscale manufacturing</li>
+          <li>intro to microscale and nanoscale manufacturing</li>
           <li>transport phenomena</li>
           <li>dynamics of particles and rigid bodies</li>
           <li>statics and strength of materials</li>
-          <li>introduction to engineering thermodynamics</li>
+          <li>intro to engineering thermodynamics</li>
           <li>elementary fluid mechanics</li>
           <li>mathematics of engineering</li>
-          <li>introduction to computer-aided design and drafting</li>
-          <li>introduction to computer programming with matlab</li>
+          <li>intro to computer-aided design and drafting</li>
+          <li>intro to computer programming with matlab</li>
         </ul>
       </Courses>
       <Courses>

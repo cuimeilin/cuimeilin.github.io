@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
+const { green, darkgreen, grey, darkgrey, beige, darkbeige, brown } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
@@ -55,6 +55,10 @@ export default function Forfun() {
         <li>
           I was a huge band geek in high school and participated in the North
           Jersey Area Band, pit orchesta, jazz band, and marching band.
+        </li>
+        <li>
+          Outside of academics, I like drawing and painting, playing video
+          games, and watching anime.
         </li>
         <li>My favorite art mediums are pencil and acrylic.</li>
         <li>

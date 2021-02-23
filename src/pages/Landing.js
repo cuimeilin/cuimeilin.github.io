@@ -2,17 +2,11 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import "../App.css";
-import About from "../components/About";
+import Intro from "../components/Intro";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
-import Footer from "../components/Footer";
 import Coursework from "../components/Coursework";
 import Delineate from "../components/Delineate";
-
-import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
-const { serif, sanserif } = fonts;
-const { notMobile } = mediaQueries;
 
 const Body = styled("div")`
   display: flex;
@@ -25,7 +19,7 @@ function Landing() {
   return (
     <div className="MainBody">
       <Body>
-        <About />
+        <Intro />
         <Delineate />
         {/*<Coursework />*/}
         <Experience />

@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  HashRouter,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 import styled from "@emotion/styled";
 
 /*
@@ -32,7 +26,7 @@ import Abt from "./pages/Abt";
 import "./App.css";
 
 import { colors, fonts, mediaQueries } from "./shared/config";
-const { darkgreen, green, darkgrey, grey, beige, darkbeige } = colors;
+const { green, darkgreen, grey, darkgrey, beige, darkbeige, brown } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
@@ -111,9 +105,6 @@ const Links = styled("div")`
 `;
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <HashRouter>
       <div className="App">

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige, darkbeige } = colors;
+const { green, darkgreen, grey, darkgrey, beige, darkbeige, brown } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 

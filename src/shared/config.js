@@ -1,10 +1,11 @@
 export const colors = {
-  darkgreen: "#327034",
-  green: "#569957",
+  darkgreen: "#246626",
+  green: "#358236",
   darkgrey: "#303030",
-  grey: "#7D7D7D",
+  grey: "#666666",
   beige: "#FFFBF0",
   darkbeige: "#d4c39b",
+  brown: "#996945",
 };
 
 export const fonts = {

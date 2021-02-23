@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
+const { green, darkgreen, grey, darkgrey, beige, darkbeige, brown } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
@@ -108,16 +108,19 @@ const Name = styled("div")`
   font-family: ${sanserif};
   font-weight: 600;
 `;
+
 const Organization = styled("div")`
   color: ${grey};
   font-family: ${sanserif};
 `;
+
 const Description = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
 `;
+
 const Tools = styled("div")`
-  color: ${green};
+  color: ${brown};
   font-size: 15px;
   margin-top: 0.5em;
   font-family: ${sanserif};

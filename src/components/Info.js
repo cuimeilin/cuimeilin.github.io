@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
+const { green, darkgreen, grey, darkgrey, beige, darkbeige, brown } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
@@ -85,7 +85,7 @@ const Text = styled("text")`
 export default function Info() {
   return (
     <Briefly>
-      <Heading>Website information:</Heading>
+      <Heading>A bit about this website:</Heading>
       <Subtext>
         Originally created in 2017 using vanilla HTML and CSS, the design of
         this website has been in constant development. Currently, it is
@@ -96,7 +96,7 @@ export default function Info() {
           rel="noopener noreferrer"
         >
           Create React App
-        </a>{" "}
+        </a>
         , coded using JavaScript, and hosted on{" "}
         <a
           href="https://pages.github.com/"
@@ -108,22 +108,33 @@ export default function Info() {
         .
       </Subtext>
       <Subtext>
-        I really enjoy earthy tones and neutrals, so the text colors used are{" "}
-        <Text style={{ backgroundColor: "#327034" }}>#327034</Text>,{" "}
-        <Text style={{ backgroundColor: "#569957" }}>#569957</Text>, and{" "}
-        <Text style={{ backgroundColor: "#303030" }}>#303030</Text>. The
-        background is #FFFBF0 and the header/footer border is{" "}
+        I like earthy tones and neutrals so the color palette I'm using is
+        reflective of that. Links are{" "}
+        <Text style={{ backgroundColor: "#358236" }}>#358236</Text> and{" "}
+        <Text style={{ backgroundColor: "#246626" }}>#246626</Text> on hover
+        (which is also used for headings). Body text is{" "}
+        <Text style={{ backgroundColor: "#303030" }}>#303030</Text> with{" "}
+        <Text style={{ backgroundColor: "#666666" }}>#666666</Text> for
+        subtitles and{" "}
+        <Text style={{ backgroundColor: "#996945" }}>#996945</Text> for accents.
+        The background is #FFFBF0 and borders are{" "}
         <Text style={{ backgroundColor: "#D4C39B", color: "#303030" }}>
           #D4C39B
         </Text>
         .
       </Subtext>
-      <Subtext1>
+      <Subtext>
         I'm a fan of using both serif and sans-serif fonts, so I use{" "}
-        <Text style={{ color: "#303030", fontFamily: "DM Serif Display" }}>
+        <Text style={{ color: "#996945", fontFamily: "DM Serif Display" }}>
           DM Serif Display
         </Text>{" "}
-        for titles and Open Sans for body text.
+        for titles and{" "}
+        <Text style={{ color: "#996945", fontWeight: "600" }}>Open Sans</Text>{" "}
+        for body text.
+      </Subtext>
+      <Subtext1>
+        Feel free to reach out if any colors or fonts are difficult to read on
+        certain screens.
       </Subtext1>
     </Briefly>
   );

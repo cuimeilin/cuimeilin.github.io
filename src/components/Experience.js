@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { colors, fonts, mediaQueries } from "../shared/config";
-const { darkgreen, green, darkgrey, grey, beige } = colors;
+const { green, darkgreen, grey, darkgrey, beige, darkbeige, brown } = colors;
 const { serif, sanserif } = fonts;
 const { notMobile, largeDesktop } = mediaQueries;
 
@@ -117,7 +117,7 @@ const Description = styled("div")`
 `;
 
 const Text = styled("text")`
-  color: ${green};
+  color: ${brown};
 `;
 
 const Past = styled("div")`
