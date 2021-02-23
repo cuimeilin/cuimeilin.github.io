@@ -7,28 +7,9 @@ const { serif, sanserif } = fonts;
 const { notMobile } = mediaQueries;
 
 const CourseContent = styled("div")`
-  width: 70%;
-  margin-bottom: 1.5em;
+  width: 77%;
   ${notMobile} {
     width: 550px;
-  }
-`;
-const Experiences = styled("div")`
-  margin-bottom: 1em;
-  ${notMobile} {
-    font-size: 18px;
-  }
-
-  a {
-    color: ${green};
-    font-family: ${sanserif};
-    text-decoration: none;
-    cursor: crosshair;
-    font-weight: 600;
-  }
-
-  a:hover {
-    color: ${darkgreen};
   }
 `;
 
@@ -49,10 +30,29 @@ const Courses = styled("div")`
   ${notMobile} {
     font-size: 18px;
   }
+
+  ul {
+    list-style-type: square;
+    color: ${darkgrey};
+    padding-left: 1em;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+
+    ${notMobile} {
+      font-size: 18px;
+    }
+  }
 `;
 
 const Subject = styled("div")`
   color: ${green};
+  font-size: 15px;
+  line-height: 1.5;
+
+  ${notMobile} {
+    font-size: 18px;
+  }
 }
 `;
 
@@ -60,42 +60,66 @@ const CourseList = styled("div")`
   color: ${darkgrey};
 `;
 
+const Main = styled("div")`
+  ${notMobile} {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
 export default function Coursework() {
   return (
     <CourseContent>
       <Heading>Coursework</Heading>
+      <Main>
+        <Courses>
+          <Subject>Mathematics</Subject>
+          <ul>
+            <li>mathematical imaging</li>
+            <li>mathematical cryptology</li>
+            <li>optimization</li>
+            <li>applied numerical methods</li>
+            <li>complex analysis for applications</li>
+            <li>real analysis 1</li>
+            <li>linear algebra</li>
+            <li>discrete structures</li>
+            <li>introduction to probability</li>
+          </ul>
+        </Courses>
+        <Courses>
+          <Subject>Computer science</Subject>
+          <ul>
+            <li>introduction to data science</li>
+            <li>formal languages and automata theory</li>
+            <li>algorithms and complexity</li>
+            <li>introduction to computer graphics</li>
+            <li>introduction to computer science (c++)</li>
+          </ul>
+        </Courses>
+      </Main>
       <Courses>
-        <Subject>Mathematics</Subject>
-        <CourseList>
-          graph theory, optimization, applied numerical methods, complex
-          analysis for applications, real analysis 1, linear algebra, discrete structures
-        </CourseList>
-      </Courses>
-      <Courses>
-        <Subject>Computer science</Subject>
-        <CourseList>
-          formal languages and automata theory, algorithms and complexity, intro
-          to computer graphics, intro to computer science 1 & 2
-        </CourseList>
-      </Courses>
-      <Courses>
-        <Subject>Mechanical engineering</Subject>
-        <CourseList>
-          intro to modeling and analysis of dynamic systems, advanced strength
-          of materials, intro to microscale and nanoscale manufacturing,
-          transport phenomena, dynamics of particles and rigid bodies, statics
-          and strength of materials, intro to engineering thermodynamics,
-          elementary fluid mechanics, mathematics of engineering, intro to
-          computer-aided design and drafting, intro to computer programming with
-          matlab
-        </CourseList>
+        <Subject>
+          Mechanical engineering (since I spent 8 quarters studying it)
+        </Subject>
+        <ul>
+          <li>advanced strength of materials</li>
+          <li>introduction to microscale and nanoscale manufacturing</li>
+          <li>transport phenomena</li>
+          <li>dynamics of particles and rigid bodies</li>
+          <li>statics and strength of materials</li>
+          <li>introduction to engineering thermodynamics</li>
+          <li>elementary fluid mechanics</li>
+          <li>mathematics of engineering</li>
+          <li>introduction to computer-aided design and drafting</li>
+          <li>introduction to computer programming with matlab</li>
+        </ul>
       </Courses>
       <Courses>
         <Subject>Others of note</Subject>
-        <CourseList>
-          inequality: history of neoliberalism, Asian American women, anime,
-          intro to probability
-        </CourseList>
+        <ul>
+          <li>inequality: history of neoliberalism</li>
+          <li>asian american women</li>
+        </ul>
       </Courses>
     </CourseContent>
   );

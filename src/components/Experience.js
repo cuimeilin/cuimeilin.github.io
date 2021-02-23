@@ -15,7 +15,7 @@ const ExperienceContent = styled("div")`
 `;
 
 const Experiences = styled("div")`
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   font-size: 15px;
   line-height: 1.5;
 
@@ -78,6 +78,14 @@ const Position = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
 `;
+
+const Links = styled("div")`
+  color: ${darkgreen};
+  font-family: ${sanserif};
+  font-weight: 600;
+  margin-top: 0.5em;
+`;
+
 const Timeframe = styled("div")`
   color: ${grey};
   font-family: ${sanserif};
@@ -91,6 +99,22 @@ const Timeframe = styled("div")`
 const Description = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
+  line-height: 1.6em;
+  a {
+    color: ${green};
+    font-family: ${sanserif};
+    text-decoration: none;
+    cursor: crosshair;
+    font-weight: normal;
+  }
+
+  a:hover {
+    color: ${darkgreen};
+  }
+`;
+
+const Text = styled("text")`
+  color: ${green};
 `;
 
 export default function Experience() {
@@ -109,12 +133,54 @@ export default function Experience() {
         <Timeframe>January 2020 - present</Timeframe>
         <Description>
           Implementing interactive tools and components for story-specific
-          flatpages using React.js, Typescript, and JavaScript.
+          flatpages using <Text>React.js</Text>, <Text>Typescript</Text>, and{" "}
+          <Text>JavaScript</Text>.
         </Description>
         <Description>
           Currently working on Features, a website dedicated to External Sites
           projects, and Carbon, a flatpage builder to streamline the request and
           deployment process.
+        </Description>
+        <Links>Previous pages:</Links>
+        <Description>
+          <a
+            href="https://features.dailybruin.com/2020/creativity-longterm/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            From Molecules to Masterpieces →
+          </a>
+          <Description>
+            Created the scrolling progress bar on a page that examines the trait
+            of creativity.
+          </Description>
+          <a
+            href="https://covidstories.dailybruin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            COVID Student Stories →
+          </a>
+          <Description>
+            Designed the story display on a site where students share their
+            experiences with the cornavirus pandemic.
+          </Description>
+          <Description>
+            Awarded fifth place in the Print and Digital category of the
+            Associated Collegiate Press 2020 COVID-19 Coverage competition.
+          </Description>
+          <a
+            href="https://features.dailybruin.com/2020/ballpark-figures/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2020 Winter Enterprise →
+          </a>
+          <Description>
+            Developed the quiz on a page that breaks down the spending of UCLA
+            Athletics and its finanical future in light of the cornavirus
+            pandemic.
+          </Description>
         </Description>
       </Experiences>
       <Experiences1>
@@ -128,9 +194,9 @@ export default function Experience() {
         <Position>Graphic Designer</Position>
         <Timeframe>May 2019 - May 2020</Timeframe>
         <Description>
-          Designed flyers, posters, and social media posts using Affinity
-          products to promote events that raised awareness towards sustainable
-          practices and behaviors.
+          Designed flyers, posters, and social media posts using{" "}
+          <Text>Affinity products</Text> to promote events that raised awareness
+          towards sustainable practices and behaviors.
         </Description>
         <Description>
           Revamped the organization's logo and shirt design for the 2020

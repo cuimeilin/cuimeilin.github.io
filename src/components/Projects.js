@@ -14,7 +14,7 @@ const ProjectContent = styled("div")`
   }
 `;
 const Project = styled("div")`
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   font-size: 15px;
   line-height: 1.5;
 
@@ -112,6 +112,15 @@ const Description = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
 `;
+const Tools = styled("div")`
+  color: ${green};
+  font-size: 14px;
+  margin-top: 0.5em;
+
+  ${notMobile} {
+    font-size: 16.5px;
+  }
+`;
 
 export default function Projects() {
   return (
@@ -131,6 +140,7 @@ export default function Projects() {
             Designed the user interface for a tool that augmented functionality
             of 3D models.
           </Description>
+          <Tools>Used: Figma, JavaScript</Tools>
         </Project>
         <Project>
           <Name>BR3W</Name>
@@ -138,6 +148,9 @@ export default function Projects() {
           <Description>
             Designed and manufactured the shell of a smart coffee machine.
           </Description>
+          <Tools>
+            Used: Autodesk Inventor, 3D printing, wood manufacturing methods
+          </Tools>
         </Project>
         <Project1>
           <Name>Penelope</Name>
@@ -147,6 +160,7 @@ export default function Projects() {
           <Description>
             Modeled assets for a claymation horror video game.
           </Description>
+          <Tools>Used: Autodesk Maya</Tools>
         </Project1>
       </Content>
     </ProjectContent>

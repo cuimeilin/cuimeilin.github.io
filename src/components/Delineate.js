@@ -21,5 +21,5 @@ const Divider = styled("div")`
 `;
 
 export default function Delineate() {
-  return <Divider>{/*□*/}</Divider>;
+  return <Divider>□ □ □</Divider>;
 }

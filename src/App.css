@@ -1,15 +1,13 @@
 .App {
-  background-color: #FFFBF0;
+  background-color: #fffbf0;
   min-height: 100vh;
   cursor: default;
   display: flex;
   flex-direction: column;
-
-
 }
 
-@media screen and (min-width: 800px){
-  .App{
+@media screen and (min-width: 800px) {
+  .App {
     align-items: center;
   }
 }

@@ -47,26 +47,23 @@ const Subtext1 = styled("div")`
   }
 `;
 
+const Text = styled("text")`
+  color: ${green};
+`;
+
 export default function About() {
   return (
     <AboutContent>
-      <Maintext>Hi, I'm Meilin (they/them).</Maintext>
+      <Maintext>Meilin Cui (they/them).</Maintext>
       <Subtext>
-        I'm a fourth year at UCLA studying mathematics of computation.
-        Currently, I'm developing story websites for the Daily Bruin, our
+        Fourth year at UCLA studying <Text>mathematics of computation</Text>.
+        Currently developing story websites for the Daily Bruin, our
         university's newspaper.
-      </Subtext>
-      <Subtext>
-        A fun fact about myself: I was a mechanical engineering major for 8
-        quarters before making the jump to switch to mathematics during the
-        spring of my third year.
       </Subtext>
       <Subtext1>
         I'm looking to pursue web development or data analytics after I complete
-        my undergraduate studies. I'm interested in applications of discrete
-        mathematics in computer science and how data analytics can be used to
-        influence policy and decision-making. Feel free to reach out if you'd
-        like to know more about me, my interests, or just want to chat.
+        my undergraduate studies. Feel free to reach out if you'd like to know
+        more about me, my interests, or just want to chat.
       </Subtext1>
     </AboutContent>
   );
