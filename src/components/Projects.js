@@ -114,12 +114,12 @@ const Description = styled("div")`
 `;
 const Tools = styled("div")`
   color: ${green};
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 0.5em;
   font-family: ${sanserif};
 
   ${notMobile} {
-    font-size: 17px;
+    font-size: 18px;
   }
 `;
 

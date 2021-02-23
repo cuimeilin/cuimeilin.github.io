@@ -27,7 +27,7 @@ const Maintext = styled("div")`
 const Subtext = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
   font-size: 15px;
   line-height: 1.5;
 

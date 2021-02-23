@@ -19,10 +19,6 @@ const Body = styled("div")`
   flex-direction: column;
   align-items: center;
   padding: 9vh 0;
-
-  ${notMobile} {
-    padding: 7vh 0;
-  }
 `;
 
 function Landing() {

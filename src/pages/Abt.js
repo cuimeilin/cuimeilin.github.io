@@ -32,7 +32,7 @@ const Maintext = styled("div")`
 const Subtext = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
   font-size: 15px;
   line-height: 1.5;
 
@@ -69,10 +69,6 @@ const Body = styled("div")`
   flex-direction: column;
   align-items: center;
   padding: 9vh 0;
-
-  ${notMobile} {
-    padding: 7vh 0;
-  }
 `;
 
 function Abt() {
@@ -103,9 +99,7 @@ function Abt() {
           <Subtext1>
             My academic interests are in discrete mathematics and its
             applications in computer science. I'm also looking to explore how
-            data can be leveraged to influence policy and decision-making. After
-            graduation, I'm looking to explore web development or data
-            analytics.
+            data can be leveraged to influence policy and decision-making.
           </Subtext1>
         </AboutContent>
         <Delineate />

@@ -75,6 +75,8 @@ const Subject = styled("div")`
   font-size: 15px;
   line-height: 1.5;
   font-weight: 600;
+  font-family: ${sanserif};
+
 
   ${notMobile} {
     font-size: 18px;
@@ -99,7 +101,7 @@ export default function Coursework() {
       <Heading>Coursework</Heading>
       <Main>
         <Courses1>
-          <Subject>Mathematics</Subject>
+          <Subject>Mathematics:</Subject>
           <ul>
             <li>mathematical imaging</li>
             <li>mathematical cryptology</li>
@@ -113,7 +115,7 @@ export default function Coursework() {
           </ul>
         </Courses1>
         <Courses1>
-          <Subject>Computer science</Subject>
+          <Subject>Computer Science:</Subject>
           <ul>
             <li>introduction to data science</li>
             <li>formal languages and automata theory</li>
@@ -124,9 +126,7 @@ export default function Coursework() {
         </Courses1>
       </Main>
       <Courses>
-        <Subject>
-          Mechanical engineering (since I spent 8 quarters studying it)
-        </Subject>
+        <Subject>Mechanical Engineering (there's a lot):</Subject>
         <ul>
           <li>advanced strength of materials</li>
           <li>introduction to microscale and nanoscale manufacturing</li>
@@ -141,7 +141,7 @@ export default function Coursework() {
         </ul>
       </Courses>
       <Courses>
-        <Subject>Others of note</Subject>
+        <Subject>Others of note:</Subject>
         <ul>
           <li>inequality: history of neoliberalism</li>
           <li>asian american women</li>

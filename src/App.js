@@ -47,7 +47,7 @@ const Nav = styled("div")`
   padding-top: 1.5em;
 
   ${notMobile} {
-    width: 550px;
+    width: 775px;
     padding-top: 2em;
   }
 `;
