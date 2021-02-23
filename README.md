@@ -4,8 +4,6 @@ This is the GitHub repository for my site, found at the link above :) Originally
 
 Currently, it is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and coded using Javascript.
 
-I'll be creating a "style guide" (if you could even call it that) in the future, with details on fonts, colors, etc. which will be linked here as well.
-
 Feel free to reach out to me via email at [meilincui.99@gmail.com](mailto:meilincui.99@gmail.com) for any feedback or suggestions (or typo warnings).
 
 ---

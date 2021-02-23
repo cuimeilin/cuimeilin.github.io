@@ -97,7 +97,7 @@ function Abt() {
               harmonograph
             </a>{" "}
             that I built in high school) but I realized that mechanical
-            engineering was not a career I could pursue. computation.
+            engineering was not a career I could pursue.
           </Subtext>
           <Subtext1>
             My academic interests are in discrete mathematics and its
