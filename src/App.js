@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
 import styled from "@emotion/styled";
 
 /*
@@ -92,7 +98,7 @@ const Links = styled("div")`
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Nav>
           <Header>
@@ -112,7 +118,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
 
     /*
     <div className="App">
