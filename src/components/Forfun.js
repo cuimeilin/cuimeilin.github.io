@@ -106,7 +106,7 @@ export default function Forfun() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Stilly Woozy
+            Still Woozy
           </a>
           .
         </li>
