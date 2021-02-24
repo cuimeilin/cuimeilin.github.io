@@ -43,7 +43,7 @@ const Courses = styled("div")`
     padding-left: 1em;
     margin: 0;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
 
     ${notMobile} {
       font-size: 18px;
@@ -66,7 +66,7 @@ const Courses1 = styled("div")`
     padding-left: 1em;
     margin: 0;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
 
     ${notMobile} {
       font-size: 18px;
@@ -77,7 +77,7 @@ const Courses1 = styled("div")`
 const Subject = styled("div")`
   color: ${green};
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
   font-weight: 600;
   font-family: ${sanserif};
 

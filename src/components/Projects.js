@@ -20,7 +20,7 @@ const ProjectContent = styled("div")`
 const Project = styled("div")`
   margin-bottom: 1.5em;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -41,7 +41,7 @@ const Project = styled("div")`
 
 const Project1 = styled("div")`
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 1em;
 
   ${notMobile} {
@@ -64,7 +64,7 @@ const Project1 = styled("div")`
 
 const Project2 = styled("div")`
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -122,7 +122,7 @@ const Description = styled("div")`
 const Tools = styled("div")`
   color: ${brown};
   font-size: 15px;
-  margin-top: 0.5em;
+  margin-top: 0.25em;
   font-family: ${sanserif};
 
   ${notMobile} {

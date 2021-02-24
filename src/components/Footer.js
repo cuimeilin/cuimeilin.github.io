@@ -8,7 +8,7 @@ const { notMobile, largeDesktop } = mediaQueries;
 
 const FooterContent = styled("div")`
   padding: 1em 0 3vh;
-  line-height: 1.5;
+  line-height: 1.6;
   border-top: 1px solid ${darkbeige};
   width: 80vw;
 

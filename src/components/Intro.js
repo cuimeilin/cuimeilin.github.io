@@ -33,7 +33,7 @@ const Subtext = styled("div")`
   font-family: ${sanserif};
   margin-bottom: 0.75em;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -44,7 +44,7 @@ const Subtext1 = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -60,9 +60,9 @@ export default function Intro() {
     <AboutContent>
       <Maintext>Meilin Cui (they/them).</Maintext>
       <Subtext>
-        Fourth year at UCLA studying <Text>mathematics of computation</Text>.
-        Currently developing story websites for the Daily Bruin, our
-        university's newspaper.
+        Fourth year at UCLA studying mathematics of computation. Currently
+        developing story websites for the Daily Bruin, our university's
+        newspaper.
       </Subtext>
       <Subtext1>
         Looking to pursue web development or data analytics after I complete my

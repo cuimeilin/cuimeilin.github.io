@@ -23,11 +23,23 @@ const Briefly = styled("div")`
     padding-left: 1em;
     margin: 0;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
 
     ${notMobile} {
       font-size: 18px;
     }
+  }
+
+  a {
+    color: ${green};
+    font-family: ${sanserif};
+    text-decoration: none;
+    cursor: crosshair;
+    font-weight: normal;
+  }
+
+  a:hover {
+    color: ${darkgreen};
   }
 `;
 
@@ -57,17 +69,46 @@ export default function Forfun() {
           Jersey Area Band, pit orchesta, jazz band, and marching band.
         </li>
         <li>
-          Outside of academics, I like drawing and painting, playing video
-          games, and watching anime.
+          I like to paint and draw; my favorite mediums are pencil and acrylic.
         </li>
-        <li>My favorite art mediums are pencil and acrylic.</li>
         <li>
           I liked reading The Vegetarian, Our Happy Time, and Goodnight Punpun.
           The next books on my list are Gödel, Escher, Bach and Capital.
         </li>
         <li>
-          I've been listening to a lot of Polyphia, Ichika Nito, Darren Korb,
-          and Still Woozy.
+          I've been listening to a lot of{" "}
+          <a
+            href="https://open.spotify.com/artist/4vGrte8FDu062Ntj0RsPiZ?si=aTsSa5hWTN2ELQqR7JACxg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Polyphia
+          </a>
+          ,{" "}
+          <a
+            href="https://open.spotify.com/artist/1v7B6ZWa7QRQS3knn3Jvf4?si=aUcx-FflQIyUBnmdSPGhOg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ichika Nito
+          </a>
+          ,{" "}
+          <a
+            href="https://open.spotify.com/artist/0ZMWrgLff357yxLyEU77a1?si=hEe8jhk1RheGzBJnmUhUWQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Darren Korb
+          </a>
+          , and{" "}
+          <a
+            href="https://open.spotify.com/artist/4iMO20EPodreIaEl8qW66y?si=5SxHDx9RRh2D_jD1qKPSKQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Stilly Woozy
+          </a>
+          .
         </li>
         <li>
           My favorite video games are Persona 5, Fire Emblem 3 Houses, and

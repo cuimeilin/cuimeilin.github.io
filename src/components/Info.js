@@ -17,19 +17,6 @@ const Briefly = styled("div")`
     width: 900px;
   }
 
-  ul {
-    list-style-type: square;
-    color: ${darkgrey};
-    padding-left: 1em;
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.5;
-
-    ${notMobile} {
-      font-size: 18px;
-    }
-  }
-
   a {
     color: ${green};
     font-family: ${sanserif};
@@ -60,7 +47,7 @@ const Subtext = styled("div")`
   font-family: ${sanserif};
   margin-bottom: 0.75em;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -71,7 +58,7 @@ const Subtext1 = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -108,10 +95,8 @@ export default function Info() {
         .
       </Subtext>
       <Subtext>
-        I like earthy tones and neutrals so the color palette I'm using is
-        reflective of that. Links are{" "}
-        <Text style={{ backgroundColor: "#358236" }}>#358236</Text> and{" "}
-        <Text style={{ backgroundColor: "#246626" }}>#246626</Text> on hover
+        Links are <Text style={{ backgroundColor: "#358236" }}>#358236</Text>{" "}
+        and <Text style={{ backgroundColor: "#1A591C" }}>#1A591C</Text> on hover
         (which is also used for headings). Body text is{" "}
         <Text style={{ backgroundColor: "#303030" }}>#303030</Text> with{" "}
         <Text style={{ backgroundColor: "#666666" }}>#666666</Text> for
@@ -124,17 +109,29 @@ export default function Info() {
         .
       </Subtext>
       <Subtext>
-        I'm a fan of using both serif and sans-serif fonts, so I use{" "}
-        <Text style={{ color: "#996945", fontFamily: "DM Serif Display" }}>
+        I use{" "}
+        <a
+          href="https://fonts.google.com/specimen/DM+Serif+Display?preview.text_type=custom&query=dm+serif+display"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontFamily: "DM Serif Display" }}
+        >
           DM Serif Display
-        </Text>{" "}
+        </a>{" "}
         for titles and{" "}
-        <Text style={{ color: "#996945", fontWeight: "600" }}>Open Sans</Text>{" "}
-        for body text.
+        <a
+          href="https://fonts.google.com/specimen/Open+Sans?preview.text_type=custom#standard-styles"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontWeight: "600" }}
+        >
+          Open Sans
+        </a>{" "}
+        for body text, both through Google Fonts.
       </Subtext>
       <Subtext1>
-        Feel free to reach out if any colors or fonts are difficult to read on
-        certain screens.
+        Don't hesitate to reach out if any colors or fonts are difficult to
+        read, or if there is any other feedback.
       </Subtext1>
     </Briefly>
   );

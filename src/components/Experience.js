@@ -20,7 +20,7 @@ const ExperienceContent = styled("div")`
 const Experiences = styled("div")`
   margin-bottom: 1.5em;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -41,7 +41,7 @@ const Experiences = styled("div")`
 
 const Experiences1 = styled("div")`
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 
   ${notMobile} {
     font-size: 18px;
@@ -102,7 +102,7 @@ const Timeframe = styled("div")`
 const Description = styled("div")`
   color: ${darkgrey};
   font-family: ${sanserif};
-  line-height: 1.6em;
+  line-height: 1.6;
   a {
     color: ${green};
     font-family: ${sanserif};

@@ -22,6 +22,7 @@ const Body = styled("div")`
 import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Abt from "./pages/Abt";
+import ScrollToTop from "./components/ScrollToTop";
 
 import "./App.css";
 
@@ -107,6 +108,7 @@ const Links = styled("div")`
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="App">
         <Nav>
           <Header>
