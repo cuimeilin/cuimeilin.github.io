@@ -101,15 +101,15 @@ export default function About() {
       <Subtext>
         Though I haven't been in the mathematics major for long, my academic
         interests are generally in discrete mathematics and its applications in
-        (theoretical) computer science. I'm currently really enjoying my formal
-        languages and automata theory course.
+        (theoretical) computer science.
       </Subtext>
       <Subtext1>
         At the same time, I care about inequity and the issues that come with
         it. Though I appreciate the subjects, I don't think theoretical computer
         science and mathematics are the most accessible fields; I would like to
         use the technical background I've developed on projects that are
-        impactful to a larger scope of people.
+        impactful to a larger scope of people, and I've developed an interest in
+        what role I can play in the field of civic tech and policy.
       </Subtext1>
     </AboutContent>
   );

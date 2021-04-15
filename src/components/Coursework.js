@@ -107,12 +107,8 @@ export default function Coursework() {
         <Courses1>
           <Subject>Mathematics:</Subject>
           <ul>
-            <li>
-              mathematical imaging <Text>(spring 2021)</Text>
-            </li>
-            <li>
-              mathematical cryptology <Text>(spring 2021)</Text>
-            </li>
+            <li>mathematical imaging</li>
+            <li>mathematical cryptology</li>
             <li>optimization</li>
             <li>applied numerical methods</li>
             <li>complex analysis for applications</li>
@@ -125,9 +121,7 @@ export default function Coursework() {
         <Courses1>
           <Subject>Computer Science:</Subject>
           <ul>
-            <li>
-              intro to data science <Text>(spring 2021)</Text>
-            </li>
+            <li>intro to data science</li>
             <li>formal languages and automata theory</li>
             <li>algorithms and complexity</li>
             <li>intro to computer graphics</li>

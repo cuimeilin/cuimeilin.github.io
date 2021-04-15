@@ -142,19 +142,30 @@ export default function Experience() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          The Daily Bruin - External Sites →
+          The Daily Bruin →
         </a>
-        <Position>Software Engineering Intern</Position>
+        <Position>External Sites Developer</Position>
         <Timeframe>January 2020 - present</Timeframe>
         <Description style={{ marginBottom: "0.5em" }}>
           Implementing interactive tools and components for story-specific
           flatpages using <Text>React.js</Text>, <Text>Typescript</Text>, and{" "}
           <Text>JavaScript</Text>.
         </Description>
-        <Description>
-          Currently working on Features, a website dedicated to External Sites
-          projects, and Carbon, a flatpage builder to streamline the request and
+        <Description style={{ marginBottom: "0.5em" }}>
+          Working on Features, a website dedicated to External Sites projects,
+          and Carbon, a flatpage builder to streamline the request and
           deployment process.
+        </Description>
+        <Description>
+          Currently cross-training with{" "}
+          <a
+            href="https://stack.dailybruin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Stack
+          </a>
+          , The Daily Bruin's data journalism section.
         </Description>
         <Links>Previous pages:</Links>
         <Past>
